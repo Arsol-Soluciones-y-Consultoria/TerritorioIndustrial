@@ -134,7 +134,7 @@ header .container {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
     width: auto
 }
 
@@ -178,7 +178,7 @@ nav ul li a:not(.btn-primary):hover::after {
 
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/Entrada.png');
+    background-image: url('img/Entrada.png');
     background-size: cover;
     background-position: center;
     display: flex;
