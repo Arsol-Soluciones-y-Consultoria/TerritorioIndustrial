@@ -175,7 +175,6 @@ nav ul li a:not(.btn-primary):hover::after {
 }
 
 /* Hero Section */
-
 .hero {
     height: 100vh;
     background-image: url('img/Entrada.png');
@@ -185,9 +184,24 @@ nav ul li a:not(.btn-primary):hover::after {
     align-items: center;
     color: var(--light-text);
     text-align: center;
+    position: relative; /* Necesario para la capa de fondo semi-transparente */
+}
+
+/* Capa semi-transparente encima de la imagen */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Color negro con 30% de opacidad */
+    z-index: 1; /* Coloca la capa debajo del contenido */
 }
 
 .hero-content {
+    position: relative; /* Asegura que el contenido esté por encima de la capa */
+    z-index: 2; /* Asegura que el texto esté sobre la capa semi-transparente */
     max-width: 800px;
     margin: 0 auto;
 }
