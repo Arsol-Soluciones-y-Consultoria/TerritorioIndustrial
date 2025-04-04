@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Territorio</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -11,17 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Incluir AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Inicializar AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
     <!-- Header Navigation -->
     <header>
         <div class="container">
@@ -46,7 +47,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" data-aos="fade-up">
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1>BSA II</h1>
@@ -58,7 +59,7 @@
     </section>
 
     <!-- Intro Section -->
-    <section class="intro" id="proyecto" data-aos="fade-up">
+    <section class="intro" id="proyecto">
         <div class="container">
             <div class="intro-content">
                 <h2>UN ESPACIO TODO TERRENO</h2>
@@ -72,7 +73,7 @@
     </section>
 
     <!-- Location Section -->
-    <section class="location" id="ubicacion" data-aos="fade-up">
+    <section class="location" id="ubicacion">
         <div class="container">
             <div class="section-header">
                 <h2>GUADALAJARA, TU TERRITORIO</h2>
@@ -81,7 +82,8 @@
             <div class="location-content">
                 <div class="location-info">
                     <h3>La ubicación es clave, y ese es nuestro valor.</h3>
-                    <p>BSA II se ubica dentro del área metropolitana de Guadalajara...</p>
+                    <p>BSA II se ubica dentro del área metropolitana de Guadalajara, adyacente a avenidas importantes como López Mateos Sur y Camino Real a Colima, para fáciles traslados hacia el resto de la ciudad, y convenientemente ubicado en una zona industrial para distintos giros de empresas.</p>
+                    <p>Situadas estratégicamente en una zona con fácil acceso a las principales vías de transporte y centros urbanos (dentro de la ciudad), nuestro proyecto ofrece conectividad para mantener cualquier negocio siempre en movimiento.</p>
                     <ul>
                         <li>Cerca de la ciudad</li>
                         <li>Flexibilidad de espacio y uso</li>
@@ -103,34 +105,168 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features" id="caracteristicas" data-aos="fade-up">
+    <section class="features" id="caracteristicas">
         <div class="container">
             <div class="section-header">
                 <h2>TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</h2>
             </div>
             <div class="master-plan">
                 <h3>MÁSTER PLAN</h3>
-                <p>Ocupar la mayor cantidad de metros cuadrados y cúbicos rentables...</p>
+                <p>Ocupar la mayor cantidad de metros cuadrados y cúbicos rentables, respetando las circulaciones y considerando el número de cajones de estacionamiento.</p>
+                
+                <div class="plan-components">
+                    <div class="plan-image">
+                        <img src="img/Planos.png" alt="Master Plan BSA II">
+                    </div>
+                    <div class="plan-details">
+                        <div class="plan-item">
+                            <h4>A. Motivo de Ingreso</h4>
+                            <p>Caseta de seguridad, control de acceso y punto limpio.</p>
+                        </div>
+                        <div class="plan-item">
+                            <h4>B. Área de Cesión</h4>
+                            <p>Espacio de Cesión según el Reglamento de Zonificación de Tlajomulco.</p>
+                        </div>
+                        <div class="plan-item">
+                            <h4>C. Vialidad Interna</h4>
+                            <p>Sección de vialidad 12 m.</p>
+                        </div>
+                        <div class="plan-item">
+                            <h4>D. Bodegas</h4>
+                            <p>Área de Bodegas.</p>
+                        </div>
+                        <div class="plan-item">
+                            <h4>E. Amenidades</h4>
+                            <p>Espacio común colaborativo para usuarios dentro del parque industrial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="warehouse-details">
+                <div class="warehouse-specs">
+                    <div class="spec-item">
+                        <h3>PLANTA TIPO DE BODEGA</h3>
+                        <img src="img/Bodega.png" alt="Planta tipo de bodega">
+                    </div>
+                    <div class="spec-item">
+                        <h3>SISTEMA CONSTRUCTIVO</h3>
+                        <img src="img/Sistema.png" alt="Sistema constructivo">
+                    </div>
+                </div>
+                
+                <div class="adaptability">
+                    <h3>BODEGAS MODULARES</h3>
+                    <h4>SE ADAPTA A TUS NECESIDADES</h4>
+                    <p>UTILIDAD HECHA ESPACIO.</p>
+                </div>
+                
+                <div class="amenities">
+                    <h3>POTENCIALIZA TU OPERACIÓN Y RELACIONES COMERCIALES</h3>
+                    <p>AMENIDADES PARA SEGUIR HACIENDO NEGOCIOS</p>
+                    
+                    <div class="amenities-container">
+                        <div class="amenity-item">
+                            <h4>AMENIDADES PLANTA BAJA</h4>
+                            <img src="img/AmenidadesB.png" alt="Amenidades planta baja">
+                        </div>
+                        <div class="amenity-item">
+                            <h4>AMENIDADES PLANTA ALTA</h4>
+                            <img src="img/AmenidadesA.png" alt="Amenidades planta alta">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Investment Section -->
-    <section class="investment" id="inversion" data-aos="fade-up">
+    <section class="investment" id="inversion">
         <div class="container">
             <div class="section-header">
                 <h2>PLUSVALÍA | INVERSIÓN INTELIGENTE</h2>
             </div>
             <div class="investment-content">
                 <div class="investment-copy">
-                    <p>Mientras que el mercado de departamentos puede experimentar fluctuaciones...</p>
+                    <p>Mientras que el mercado de departamentos puede experimentar fluctuaciones y limitaciones en su crecimiento de valor, nuestras bodegas industriales están diseñadas para ofrecer un retorno de inversión que supera las expectativas.</p>
+                    <p>Con una demanda creciente de espacios industriales y comerciales, brindándote un crecimiento constante y sostenido en el tiempo.</p>
+                </div>
+                
+                <div class="investment-comparison">
+                    <h3>RENTABILIDAD | BODEGAS VS DEPARTAMENTOS</h3>
+                    <div class="comparison-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>PRECIO X M2</th>
+                                    <th>M2</th>
+                                    <th>VALOR</th>
+                                    <th>UBICACIÓN</th>
+                                    <th>RENTA MENSUAL</th>
+                                    <th>CAP RATE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight">
+                                    <td>$26,500.00</td>
+                                    <td>262</td>
+                                    <td>$6,943,000.00</td>
+                                    <td>FLEX INDUSTRIAL STA. ANITA II TLAJOMULCO</td>
+                                    <td>$47,000.00</td>
+                                    <td>8.08%</td>
+                                </tr>
+                                <tr>
+                                    <td>$37,272.00</td>
+                                    <td>110</td>
+                                    <td>$4,100,000.00</td>
+                                    <td>DEPARTAMENTO EN SOLARES, ZAPOPAN</td>
+                                    <td>$26,000.00</td>
+                                    <td>6.40%</td>
+                                </tr>
+                                <tr>
+                                    <td>$73,333.00</td>
+                                    <td>90</td>
+                                    <td>$6,600,000.00</td>
+                                    <td>DEPARTAMENTO EN ARTEA, PROVIDENCIA</td>
+                                    <td>$29,000.00</td>
+                                    <td>5.20%</td>
+                                </tr>
+                                <tr>
+                                    <td>$46,508.00</td>
+                                    <td>133</td>
+                                    <td>$6,100,000.00</td>
+                                    <td>DEPARTAMENTO EN RESIDENCIAL CORDILLERAS</td>
+                                    <td>$24,000.00</td>
+                                    <td>4.72%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="client-possibilities">
+                    <h3>CARTERA DE CLIENTES Y POSIBILIDADES</h3>
+                    <ul class="possibilities-list">
+                        <li>Comisaríatos</li>
+                        <li>Taller Mecánico Especializado</li>
+                        <li>Industria médica</li>
+                        <li>Almacén de medicamentos refrigerados</li>
+                        <li>Comercialización y reparación de motores especializados</li>
+                        <li>Fábrica de salsas para exportación</li>
+                        <li>Dark Kitchen</li>
+                        <li>Talleres</li>
+                        <li>Estudios y Oficinas</li>
+                        <li>Almacenes generales</li>
+                        <li>Gimnasios</li>
+                        <li>Entre otros</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section -->
-    <section class="contact" id="contacto" data-aos="fade-up">
+    <section class="contact" id="contacto">
         <div class="container">
             <div class="section-header">
                 <h2>TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</h2>
@@ -165,15 +301,47 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Footer -->
-    <footer class="footer" data-aos="fade-up">
-        <div class="container footer-grid">
-            <div class="footer-section">
-                <img src="img/LogoB.png" alt="Territorio Industrial Logo" class="footer-logo">
-                <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+<footer class="footer">
+  <div class="container footer-grid">
+    <!-- Logo y lema -->
+    <div class="footer-section">
+      <img src="img/LogoB.png" alt="Territorio Industrial Logo" class="footer-logo">
+      <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
+    </div>
+
+    <!-- Contacto -->
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <ul class="footer-contact">
+        <li><i class="fas fa-map-marker-alt"></i> Tlajomulco de Zúñiga, Jalisco</li>
+        <li><i class="fas fa-phone"></i> +52 (33) XXXX XXXX</li>
+        <li><i class="fas fa-envelope"></i> info@territorioindustrial.mx</li>
+      </ul>
+    </div>
+
+    <!-- Enlaces rápidos -->
+    <div class="footer-section">
+      <h4>Enlaces</h4>
+      <ul class="footer-links">
+        <li><a href="#">Aviso de Privacidad</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-section">
+      <h4>Síguenos</h4>
+      <div class="footer-social">
+        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Territorio Industrial. Todos los derechos reservados.</p>
+  </div>
+</footer>
