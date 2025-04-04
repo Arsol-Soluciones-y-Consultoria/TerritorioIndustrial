@@ -571,7 +571,7 @@ tr.highlight {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color
+    border-color:var(--accent-color);
 
 
 /* Footer Styles */
