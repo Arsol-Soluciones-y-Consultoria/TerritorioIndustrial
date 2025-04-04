@@ -97,7 +97,7 @@ section {
 
 .btn-primary {
     background-color: var(--gray-bg);
-    color: var(--light-text);
+    color: var(--text-color);
     padding: 8px 20px;
     border-radius: 30px;
     font-weight: 500;
@@ -188,7 +188,7 @@ nav ul li a:not(.btn-primary):hover::after {
 
 .hero {
     height: 100vh;
-    background-image: url('../img/Entrada.png');
+    background-image: url('img/Entrada.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
