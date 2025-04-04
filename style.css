@@ -38,7 +38,7 @@ body {
 }
 
 img {
-    max-width: 300%;
+    max-width: 1000%;
     height: auto;
 }
 
@@ -134,7 +134,7 @@ header .container {
 }
 
 .logo img {
-    height: 200px;
+    height: 800px;
 }
 
 nav ul {
