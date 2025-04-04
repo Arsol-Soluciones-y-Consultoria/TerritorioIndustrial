@@ -386,6 +386,29 @@ nav ul li a:not(.btn-primary):hover::after {
 }
 
 /* Media Queries for Responsiveness */
+
+#desktop-nav {
+    display: none; /* Ocultar por defecto en móviles */
+}
+
+#desktop-nav.active {
+    display: block; /* Mostrar cuando la clase active esté presente */
+}
+
+.menu-toggle {
+    display: block; /* Mostrar el botón de menú en móviles */
+}
+
+@media (min-width: 768px) {
+    #desktop-nav {
+        display: block; /* Mostrar el menú por defecto en pantallas grandes */
+    }
+
+    .menu-toggle {
+        display: none; /* Ocultar el botón de menú en pantallas grandes */
+    }
+}
+
 @media screen and (max-width: 1024px) {
   .hero-content h1 {
     font-size: 3rem;
