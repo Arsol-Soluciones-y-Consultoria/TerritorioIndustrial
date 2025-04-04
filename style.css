@@ -175,9 +175,10 @@ nav ul li a:not(.btn-primary):hover::after {
 }
 
 /* Hero Section */
+
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('images/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/Entrada.png');
     background-size: cover;
     background-position: center;
     display: flex;
