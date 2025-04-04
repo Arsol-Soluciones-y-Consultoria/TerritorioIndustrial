@@ -270,10 +270,11 @@ nav ul li a:not(.btn-primary):hover::after {
 }
 
 .location-map {
-    display: inline-block;
+    flex: 1;
+    min-width: 300px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .location-map img {
