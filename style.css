@@ -585,81 +585,66 @@ tr.highlight {
 
 /* Footer Styles */
 .footer {
-    background-color: var(--dark-bg);
-    color: var(--light-text);
-    padding: 50px 0;
+  background-color: #111;
+  color: #ccc;
+  padding: 3em 1em;
+  font-size: 0.9rem;
 }
-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- 
+
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
-  align-items: start;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .footer-logo {
-  height: 40px;
-  margin-bottom: 15px;
+  width: 160px;
+  margin-bottom: 1em;
 }
 
-.footer-section h4 {
-  color: #fff;
-  margin-bottom: 15px;
-  font-size: 1.1rem;
+.footer-tagline {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 1em;
 }
 
-.footer-contact,
-.footer-links {
+.footer-contact li {
   list-style: none;
-  padding: 0;
+  margin-bottom: 0.5em;
 }
 
-.footer-contact li,
-.footer-links li {
-  margin-bottom: 10px;
-}
-
-.footer-contact i,
-.footer-social i {
-  margin-right: 10px;
-  color: #b0b0b0;
-}
-
-.footer-links a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #fff;
+.footer-contact i {
+  margin-right: 0.5em;
 }
 
 .footer-social a {
-  margin-right: 15px;
   color: #ccc;
+  margin-right: 1em;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #9db06b;
+  color: white;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  font-size: 0.85rem;
-  color: #888;
+  padding-top: 2em;
+  font-size: 0.8rem;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 2em;
+  }
 }
