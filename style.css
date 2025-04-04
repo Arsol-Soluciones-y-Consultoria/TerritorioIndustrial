@@ -530,6 +530,8 @@ tr.highlight {
 .form-group textarea:focus {
     outline: none;
     border-color
+
+    /* Footer Styles */
 .footer {
   background-color: #111;
   color: #ccc;
@@ -539,40 +541,44 @@ tr.highlight {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: 1fr 1fr; /* Dividir en dos columnas de igual tamaño */
   gap: 40px;
   align-items: start;
 }
 
+/* Sección de logo */
+.footer-logo {
+  height: 20px; /* Reducir el tamaño del logo */
+  margin-bottom: 10px;
+}
+
+/* Sección de texto */
 .footer-section h4 {
   color: #fff;
   margin-bottom: 15px;
   font-size: 1.1rem;
 }
 
-.footer-logo {
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.footer-tagline {
-  color: #aaa;
-  font-style: italic;
-  margin-top: 5px;
+/* Ajustar el contenido de los enlaces de contacto y redes sociales */
+.footer-contact,
+.footer-links {
+  list-style: none;
+  padding: 0;
 }
 
 .footer-contact li,
 .footer-links li {
   margin-bottom: 10px;
-  list-style: none;
 }
 
+/* Íconos de redes sociales */
 .footer-contact i,
 .footer-social i {
   margin-right: 10px;
   color: #b0b0b0;
 }
 
+/* Enlaces */
 .footer-links a {
   color: #ccc;
   text-decoration: none;
@@ -583,6 +589,7 @@ tr.highlight {
   color: #fff;
 }
 
+/* Estilos de redes sociales */
 .footer-social a {
   margin-right: 15px;
   color: #ccc;
@@ -594,6 +601,7 @@ tr.highlight {
   color: #9db06b; /* verde oliva claro */
 }
 
+/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
