@@ -76,7 +76,7 @@ section {
     text-transform: uppercase;
     color: var(--primary-color);
     position: relative;
-    padding-bottom: 15px;   
+    padding-bottom: 15px;
 }
 
 .section-header h2:after {
@@ -134,7 +134,7 @@ header .container {
 }
 
 .logo img {
-    height: 800px;
+    height: 50px;
 }
 
 nav ul {
