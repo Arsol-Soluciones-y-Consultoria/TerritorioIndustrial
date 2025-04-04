@@ -7,7 +7,7 @@
     --light-text: #ffffff;
     --dark-bg: #000000;
     --light-bg: #d9d9d9;
-    --gray-bg: #bfbfbf;
+    --gray-bg: ##2c2c2c;
     --box-shadow: rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
@@ -178,7 +178,7 @@ nav ul li a:not(.btn-primary):hover::after {
 .hero {
     position: relative;
     height: 100vh;
-    background-image: url('img/Entrada.png');
+    background-image:url('img/Calle.png');
     background-size: cover;
     background-position: center;
     display: flex;
