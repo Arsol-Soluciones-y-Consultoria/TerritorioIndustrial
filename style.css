@@ -175,9 +175,10 @@ nav ul li a:not(.btn-primary):hover::after {
 }
 
 /* Hero Section */
+
 .hero {
     height: 100vh;
-    background-image: url('img/Calle.png');
+    background-image: url('img/Entrada.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -282,6 +283,7 @@ nav ul li a:not(.btn-primary):hover::after {
     height: auto;
 }
 
+
 .location-points {
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +312,224 @@ nav ul li a:not(.btn-primary):hover::after {
     margin-right: 10px;
 }
 
-/* Footer Styles */
+/* Features Section */
+.features {
+    background-color: var(--light-bg);
+}
+
+.master-plan {
+    margin-bottom: 60px;
+}
+
+.master-plan h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plan-components {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.plan-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.plan-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.plan-item {
+    margin-bottom: 20px;
+}
+
+.plan-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.warehouse-details {
+    margin-top: 80px;
+}
+
+.warehouse-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.spec-item {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.spec-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.adaptability {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.adaptability h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.adaptability h4 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.amenities {
+    text-align: center;
+}
+
+.amenities h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.amenities-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.amenity-item {
+    flex: 1;
+    min-width: 300px;
+}
+
+.amenity-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+/* Investment Section */
+.investment {
+    background-color: #ffffff;
+}
+
+.investment-copy {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.investment-comparison h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comparison-table {
+    overflow-x: auto;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr.highlight {
+    background-color: rgba(231, 76, 60, 0.1);
+    font-weight: 600;
+}
+
+.client-possibilities {
+    margin-top: 50px;
+}
+
+.client-possibilities h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.possibilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.possibilities-list li {
+    background-color: var(--gray-bg);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--light-bg);
+}
+
+.contact-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color
 .footer {
   background-color: #111;
   color: #ccc;
@@ -320,14 +539,9 @@ nav ul li a:not(.btn-primary):hover::after {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dividir en dos columnas de igual tamaño */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   align-items: start;
-}
-
-.footer-logo {
-  height: 20px; /* Reducir el tamaño del logo */
-  margin-bottom: 10px;
 }
 
 .footer-section h4 {
@@ -336,18 +550,23 @@ nav ul li a:not(.btn-primary):hover::after {
   font-size: 1.1rem;
 }
 
-.footer-contact,
-.footer-links {
-  list-style: none;
-  padding: 0;
+.footer-logo {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  color: #aaa;
+  font-style: italic;
+  margin-top: 5px;
 }
 
 .footer-contact li,
 .footer-links li {
   margin-bottom: 10px;
+  list-style: none;
 }
 
-/* Íconos de redes sociales */
 .footer-contact i,
 .footer-social i {
   margin-right: 10px;
@@ -375,7 +594,6 @@ nav ul li a:not(.btn-primary):hover::after {
   color: #9db06b; /* verde oliva claro */
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
@@ -385,121 +603,4 @@ nav ul li a:not(.btn-primary):hover::after {
   color: #888;
 }
 
-/* Media Queries for Responsiveness */
 
-#desktop-nav {
-    display: none; /* Ocultar por defecto en móviles */
-}
-
-#desktop-nav.active {
-    display: block; /* Mostrar cuando la clase active esté presente */
-}
-
-.menu-toggle {
-    display: block; /* Mostrar el botón de menú en móviles */
-}
-
-@media (min-width: 768px) {
-    #desktop-nav {
-        display: block; /* Mostrar el menú por defecto en pantallas grandes */
-    }
-
-    .menu-toggle {
-        display: none; /* Ocultar el botón de menú en pantallas grandes */
-    }
-}
-
-@media screen and (max-width: 1024px) {
-  .hero-content h1 {
-    font-size: 3rem;
-  }
-
-  .hero-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .container {
-    padding: 0 10px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr 1fr; /* Para pantallas más pequeñas */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  nav ul li {
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content h2 {
-    font-size: 1.6rem;
-  }
-
-  .location-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .location-info,
-  .location-map {
-    flex: 1;
-    min-width: 100%;
-  }
-
-  .plan-components,
-  .warehouse-specs,
-  .amenities-container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content h2 {
-    font-size: 1.4rem;
-  }
-
-  .btn-primary {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-
-  .location-info h3 {
-    font-size: 1.4rem;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-logo {
-    height: 30px;
-  }
-
-  .footer-bottom {
-    font-size: 0.75rem;
-  }
-}
