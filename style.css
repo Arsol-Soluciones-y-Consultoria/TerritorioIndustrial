@@ -178,7 +178,7 @@ nav ul li a:not(.btn-primary):hover::after {
 
 .hero {
     height: 100vh;
-    background-image: url('img/Entrada.png');
+    background-image: url('img/Calle.png');
     background-size: cover;
     background-position: center;
     display: flex;
