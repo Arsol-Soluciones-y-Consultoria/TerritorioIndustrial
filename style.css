@@ -1,14 +1,14 @@
 /* Base Styles & Variables */
 :root {
-    --primary-color: #333333;
-    --secondary-color: #666666;
+    --primary-color: #2c2c2c;
+    --secondary-color: #595959;
     --accent-color: #A4A492;
-    --text-color: #000000;
+    --text-color: #1a1a1a;
     --light-text: #ffffff;
-    --dark-bg: #000000;
-    --light-bg: #d9d9d9;
-    --gray-bg: ##2c2c2c;
-    --box-shadow: rgba(0, 0, 0, 0.3);
+    --dark-bg: #1a1a1a;
+    --light-bg: #f5f5f5;
+    --gray-bg: ##e0e0e0;
+    --box-shadow: rgba(0, 0, 0, 0.15);
     --transition: all 0.3s ease;
 }
 
