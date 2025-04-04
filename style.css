@@ -631,3 +631,18 @@ tr.highlight {
   font-size: 0.85rem;
   color: #888;
 }
+@media screen and (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    margin: 0 auto;
+    height: 40px; /* tamaño ajustado */
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+}
