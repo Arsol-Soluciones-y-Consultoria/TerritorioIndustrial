@@ -602,6 +602,10 @@ tr.highlight {
   margin-bottom: 1em;
 }
 
+.footer-contact {
+  padding-left: 0;
+}
+
 .footer-contact li {
   list-style: none;
   margin-bottom: 0.5em;
@@ -611,10 +615,14 @@ tr.highlight {
   margin-right: 0.5em;
 }
 
+.footer-social {
+  display: flex;
+  gap: 1em;
+}
+
 .footer-social a {
   color: #ccc;
-  margin-right: 1em;
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Aumenté el tamaño para hacer los íconos más visibles */
   transition: color 0.3s ease;
 }
 
@@ -628,6 +636,8 @@ tr.highlight {
   font-size: 0.8rem;
   color: #666;
 }
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .footer-grid {
     flex-direction: column;
@@ -638,4 +648,9 @@ tr.highlight {
   .footer-section {
     margin-bottom: 2em;
   }
+
+  .footer-social {
+    justify-content: center; /* Centra los íconos de redes sociales en pantallas pequeñas */
+  }
 }
+
