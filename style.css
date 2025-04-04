@@ -510,20 +510,32 @@ tr.highlight {
     margin-bottom: 30px;
 }
 
+.possibilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Más compacto */
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
 .possibilities-list li {
     background-color: var(--gray-bg);
-    padding: 12px 24px;
-    border-radius: 40px;
+    padding: 6px 14px; /* Ovalitos más pequeños */
+    border-radius: 999px; /* Súper ovalado */
     font-weight: 500;
+    font-size: 0.9rem;
     color: var(--light-text);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
 }
 
 .possibilities-list li:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
+
 
 /* Contact Section */
 .contact {
