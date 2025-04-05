@@ -196,7 +196,7 @@ header .container {
 }
 
 .logo img {
-    height: 70px; /* Aumentado de 60px a 70px */
+    height: 80px; /* Aumentado de 60px a 80px */
     width: auto;
 }
 
@@ -509,8 +509,13 @@ nav ul li a.active::after {
 
 /* Nuevas secciones separadas para planta tipo y sistema constructivo */
 .warehouse-section {
-    margin-bottom: 60px;
+    margin-bottom: 100px; /* Aumentado de 60px a 100px para separar más las secciones */
     text-align: center;
+    padding: 40px 0; /* Añadido padding para más separación */
+}
+
+.warehouse-section:last-child {
+    margin-bottom: 60px; /* Menos margen para la última sección */
 }
 
 .warehouse-image-container {
@@ -734,20 +739,28 @@ tr.highlight {
 
 .footer-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; /* Cambiado a columna para centrar todo */
+    align-items: center; /* Centrar horizontalmente */
     gap: 2em;
     max-width: 1200px;
     margin: auto;
+    text-align: center; /* Centrar texto */
+}
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar contenido */
 }
 
 .footer-logo-container {
-    text-align: center; /* Centrar el logo */
+    text-align: center;
     margin-bottom: 1.5em;
 }
 
 .footer-logo {
-    width: 250px; /* Aumentado de 200px a 250px */
+    width: 300px; /* Aumentado de 250px a 300px */
     height: auto;
 }
 
@@ -755,11 +768,14 @@ tr.highlight {
     font-style: italic;
     font-size: 0.95rem;
     margin-bottom: 1em;
-    text-align: center; /* Centrar el texto */
+    text-align: center;
 }
 
 .footer-contact {
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos */
 }
 
 .footer-contact li {
@@ -767,6 +783,7 @@ tr.highlight {
     margin-bottom: 0.5em;
     display: flex;
     align-items: center;
+    justify-content: center; /* Centrar contenido */
 }
 
 .footer-contact i {
@@ -777,14 +794,16 @@ tr.highlight {
 .footer-social {
     display: flex;
     gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
 }
 
 .footer-social a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 50px; /* Aumentado de 40px a 50px */
+    height: 50px; /* Aumentado de 40px a 50px */
     background-color: #222;
     color: #ccc;
     border-radius: 50%;
@@ -799,7 +818,7 @@ tr.highlight {
 
 /* Corregido para que se vean los iconos */
 .footer-social i {
-    font-size: 1.2rem; /* Tamaño más grande para los iconos */
+    font-size: 1.5rem; /* Aumentado de 1.2rem a 1.5rem */
 }
 
 .footer-bottom {
@@ -807,6 +826,7 @@ tr.highlight {
     padding-top: 2em;
     font-size: 0.8rem;
     color: #666;
+    width: 100%;
 }
 
 /* Back to top button */
@@ -931,24 +951,6 @@ tr.highlight {
     .hero-content p {
         font-size: 1rem;
     }
-    
-    .footer-grid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .footer-section {
-        margin-bottom: 2em;
-    }
-    
-    .footer-social {
-        justify-content: center;
-    }
-    
-    .footer-contact li {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 576px) {
@@ -978,4 +980,4 @@ tr.highlight {
         width: 40px;
         height: 40px;
     }
-}v
+}
