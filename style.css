@@ -196,7 +196,7 @@ header .container {
 }
 
 .logo img {
-    height: 60px;
+    height: 70px; /* Aumentado de 60px a 70px */
     width: auto;
 }
 
@@ -285,7 +285,7 @@ nav ul li a.active::after {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    background: url('img/Entrada.png') no-repeat center center/cover; /* Cambiado a la imagen local */
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -481,6 +481,8 @@ nav ul li a.active::after {
 .plan-details {
     flex: 1;
     min-width: 300px;
+    max-height: 500px; /* Ajustado para que no sea más larga que la imagen */
+    overflow-y: auto; /* Permite scroll si hay muchos elementos */
 }
 
 .plan-item {
@@ -505,17 +507,15 @@ nav ul li a.active::after {
     margin-top: 80px;
 }
 
-.warehouse-specs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+/* Nuevas secciones separadas para planta tipo y sistema constructivo */
+.warehouse-section {
     margin-bottom: 60px;
+    text-align: center;
 }
 
-.spec-item {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
+.warehouse-image-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .adaptability {
@@ -741,15 +741,21 @@ tr.highlight {
     margin: auto;
 }
 
+.footer-logo-container {
+    text-align: center; /* Centrar el logo */
+    margin-bottom: 1.5em;
+}
+
 .footer-logo {
-    width: 200px;
-    margin-bottom: 1em;
+    width: 250px; /* Aumentado de 200px a 250px */
+    height: auto;
 }
 
 .footer-tagline {
     font-style: italic;
     font-size: 0.95rem;
     margin-bottom: 1em;
+    text-align: center; /* Centrar el texto */
 }
 
 .footer-contact {
@@ -789,6 +795,11 @@ tr.highlight {
     background-color: var(--accent-color);
     color: white;
     transform: translateY(-3px);
+}
+
+/* Corregido para que se vean los iconos */
+.footer-social i {
+    font-size: 1.2rem; /* Tamaño más grande para los iconos */
 }
 
 .footer-bottom {
@@ -967,4 +978,4 @@ tr.highlight {
         width: 40px;
         height: 40px;
     }
-}
+}v
