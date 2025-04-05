@@ -285,7 +285,7 @@ nav ul li a.active::after {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('img/Calle.png') no-repeat center center/cover; /* Cambiado a la imagen local */
+    background: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; /* Cambiado a la imagen local */
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -733,7 +733,7 @@ tr.highlight {
 .footer {
     background-color: #111;
     color: #ccc;
-    padding: 3em 1em;
+    padding: 2em 1em;
     font-size: 0.9rem;
 }
 
@@ -741,7 +741,7 @@ tr.highlight {
     display: flex;
     flex-direction: column; /* Cambiado a columna para centrar todo */
     align-items: center; /* Centrar horizontalmente */
-    gap: 2em;
+    gap: 1.5em;
     max-width: 1200px;
     margin: auto;
     text-align: center; /* Centrar texto */
@@ -756,18 +756,18 @@ tr.highlight {
 
 .footer-logo-container {
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .footer-logo {
-    width: 300px; /* Aumentado de 250px a 300px */
+    width: 350px; /* Aumentado de 250px a 300px */
     height: auto;
 }
 
 .footer-tagline {
     font-style: italic;
     font-size: 0.95rem;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     text-align: center;
 }
 
@@ -823,7 +823,7 @@ tr.highlight {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 0.8rem;
     color: #666;
     width: 100%;
