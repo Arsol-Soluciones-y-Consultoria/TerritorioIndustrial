@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Territorio</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,29 +6,26 @@
     <meta name="description" content="BSA II - Bodegas Santa Anita 2. Flex spaces y bodegas modulares en Guadalajara. Inversión inteligente con excelente ubicación y alta plusvalía.">
     <meta name="keywords" content="Bodegas Santa Anita, BSA II, Territorio Industrial, flex spaces, bodegas modulares, inversión industrial, Guadalajara, Tlajomulco">
     <title>BSA II - Bodegas Santa Anita | Territorio Industrial</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header Navigation -->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="logo">
                 <img src="img/LogoB.png" alt="Territorio Industrial Logo">
             </div>
             <nav id="desktop-nav">
                 <ul>
-                    <li><a href="#proyecto">El Proyecto</a></li>
-                    <li><a href="#ubicacion">Ubicación</a></li>
-                    <li><a href="#caracteristicas">Características</a></li>
-                    <li><a href="#inversion">Inversión</a></li>
-                    <li><a href="#contacto" class="btn-primary">Contáctanos</a></li>
+                    <li><a href="#proyecto" class="nav-link" data-section="proyecto">El Proyecto</a></li>
+                    <li><a href="#ubicacion" class="nav-link" data-section="ubicacion">Ubicación</a></li>
+                    <li><a href="#caracteristicas" class="nav-link" data-section="caracteristicas">Características</a></li>
+                    <li><a href="#inversion" class="nav-link" data-section="inversion">Inversión</a></li>
+                    <li><a href="#contacto" class="btn-primary nav-link" data-section="contacto">Contáctanos</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle" id="mobile-menu">
@@ -47,25 +34,42 @@
                 <span></span>
             </div>
         </div>
+        
+        <!-- Menú móvil -->
+        <div id="mobile-nav">
+            <nav class="container">
+                <ul>
+                    <li><a href="#proyecto" class="nav-link" data-section="proyecto">El Proyecto</a></li>
+                    <li><a href="#ubicacion" class="nav-link" data-section="ubicacion">Ubicación</a></li>
+                    <li><a href="#caracteristicas" class="nav-link" data-section="caracteristicas">Características</a></li>
+                    <li><a href="#inversion" class="nav-link" data-section="inversion">Inversión</a></li>
+                    <li><a href="#contacto" class="nav-link" data-section="contacto">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content animate-fade-in">
                 <h1>BSA II</h1>
                 <h2>BODEGAS SANTA ANITA 2</h2>
                 <p>FLEX SPACES | BODEGAS MODULARES</p>
                 <a href="#contacto" class="btn-primary">Invierte Ahora</a>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
 
     <!-- Intro Section -->
-    <section class="intro" id="proyecto">
+    <section class="intro section-animate" id="proyecto">
         <div class="container">
             <div class="intro-content">
-                <h2>UN ESPACIO TODO TERRENO</h2>
+                <h2 class="section-title">Un espacio todo terreno</h2>
                 <p>Un lugar donde todo es posible. Una ubicación cercana a todo lo que necesitas. Todo esto es TERRITORIO INDUSTRIAL.</p>
             </div>
             <div class="intro-info">
@@ -76,10 +80,10 @@
     </section>
 
     <!-- Location Section -->
-    <section class="location" id="ubicacion">
+    <section class="location section-animate" id="ubicacion">
         <div class="container">
             <div class="section-header">
-                <h2>GUADALAJARA, TU TERRITORIO</h2>
+                <h2 class="section-title">Guadalajara, tu territorio</h2>
                 <p>UBICACIÓN | BENEFICIOS LOGÍSTICOS</p>
             </div>
             <div class="location-content">
@@ -87,7 +91,7 @@
                     <h3>La ubicación es clave, y ese es nuestro valor.</h3>
                     <p>BSA II se ubica dentro del área metropolitana de Guadalajara, adyacente a avenidas importantes como López Mateos Sur y Camino Real a Colima, para fáciles traslados hacia el resto de la ciudad, y convenientemente ubicado en una zona industrial para distintos giros de empresas.</p>
                     <p>Situadas estratégicamente en una zona con fácil acceso a las principales vías de transporte y centros urbanos (dentro de la ciudad), nuestro proyecto ofrece conectividad para mantener cualquier negocio siempre en movimiento.</p>
-                    <ul>
+                    <ul class="custom-list">
                         <li>Cerca de la ciudad</li>
                         <li>Flexibilidad de espacio y uso</li>
                         <li>Enfoque industrial y comercial</li>
@@ -101,25 +105,25 @@
                     </div>
                 </div>
                 <div class="location-map">
-                    <img src="img/Mapa.png" alt="Mapa de ubicación BSA II">
+                    <img src="img/Mapa.png" alt="Mapa de ubicación BSA II" class="shadow-img">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features" id="caracteristicas">
+    <section class="features section-animate" id="caracteristicas">
         <div class="container">
             <div class="section-header">
-                <h2>TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</h2>
+                <h2 class="section-title">Tu bodega modular, tu punto en la ciudad</h2>
             </div>
             <div class="master-plan">
-                <h3>MÁSTER PLAN</h3>
+                <h3 class="subsection-title">Máster Plan</h3>
                 <p>Ocupar la mayor cantidad de metros cuadrados y cúbicos rentables, respetando las circulaciones y considerando el número de cajones de estacionamiento.</p>
                 
                 <div class="plan-components">
                     <div class="plan-image">
-                        <img src="img/Planos.png" alt="Master Plan BSA II">
+                        <img src="img/Planos.png" alt="Master Plan BSA II" class="shadow-img">
                     </div>
                     <div class="plan-details">
                         <div class="plan-item">
@@ -149,33 +153,33 @@
             <div class="warehouse-details">
                 <div class="warehouse-specs">
                     <div class="spec-item">
-                        <h3>PLANTA TIPO DE BODEGA</h3>
-                        <img src="img/Bodega.png" alt="Planta tipo de bodega">
+                        <h3 class="subsection-title">Planta tipo de bodega</h3>
+                        <img src="img/Bodega.png" alt="Planta tipo de bodega" class="shadow-img">
                     </div>
                     <div class="spec-item">
-                        <h3>SISTEMA CONSTRUCTIVO</h3>
-                        <img src="img/Sistema.png" alt="Sistema constructivo">
+                        <h3 class="subsection-title">Sistema constructivo</h3>
+                        <img src="img/Sistema.png" alt="Sistema constructivo" class="shadow-img">
                     </div>
                 </div>
                 
                 <div class="adaptability">
-                    <h3>BODEGAS MODULARES</h3>
-                    <h4>SE ADAPTA A TUS NECESIDADES</h4>
-                    <p>UTILIDAD HECHA ESPACIO.</p>
+                    <h3>Bodegas modulares</h3>
+                    <h4>Se adapta a tus necesidades</h4>
+                    <p>Utilidad hecha espacio.</p>
                 </div>
                 
                 <div class="amenities">
-                    <h3>POTENCIALIZA TU OPERACIÓN Y RELACIONES COMERCIALES</h3>
-                    <p>AMENIDADES PARA SEGUIR HACIENDO NEGOCIOS</p>
+                    <h3 class="subsection-title">Potencializa tu operación y relaciones comerciales</h3>
+                    <p>Amenidades para seguir haciendo negocios</p>
                     
                     <div class="amenities-container">
                         <div class="amenity-item">
-                            <h4>AMENIDADES PLANTA BAJA</h4>
-                            <img src="img/AmenidadesB.png" alt="Amenidades planta baja">
+                            <h4>Amenidades planta baja</h4>
+                            <img src="img/AmenidadesB.png" alt="Amenidades planta baja" class="shadow-img">
                         </div>
                         <div class="amenity-item">
-                            <h4>AMENIDADES PLANTA ALTA</h4>
-                            <img src="img/AmenidadesA.png" alt="Amenidades planta alta">
+                            <h4>Amenidades planta alta</h4>
+                            <img src="img/AmenidadesA.png" alt="Amenidades planta alta" class="shadow-img">
                         </div>
                     </div>
                 </div>
@@ -184,10 +188,10 @@
     </section>
     
     <!-- Investment Section -->
-    <section class="investment" id="inversion">
+    <section class="investment section-animate" id="inversion">
         <div class="container">
             <div class="section-header">
-                <h2>PLUSVALÍA | INVERSIÓN INTELIGENTE</h2>
+                <h2 class="section-title">Plusvalía | Inversión inteligente</h2>
             </div>
             <div class="investment-content">
                 <div class="investment-copy">
@@ -196,7 +200,7 @@
                 </div>
                 
                 <div class="investment-comparison">
-                    <h3>RENTABILIDAD | BODEGAS VS DEPARTAMENTOS</h3>
+                    <h3 class="subsection-title">Rentabilidad | Bodegas vs departamentos</h3>
                     <div class="comparison-table">
                         <table>
                             <thead>
@@ -248,7 +252,7 @@
                 </div>
                 
                 <div class="client-possibilities">
-                    <h3>CARTERA DE CLIENTES Y POSIBILIDADES</h3>
+                    <h3 class="subsection-title">Cartera de clientes y posibilidades</h3>
                     <ul class="possibilities-list">
                         <li>Comisaríatos</li>
                         <li>Taller Mecánico Especializado</li>
@@ -269,10 +273,10 @@
     </section>
     
     <!-- Contact Section -->
-    <section class="contact" id="contacto">
+    <section class="contact section-animate" id="contacto">
         <div class="container">
             <div class="section-header">
-                <h2>TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</h2>
+                <h2 class="section-title">Tu bodega modular, tu punto en la ciudad</h2>
                 <p>¡Contáctanos para más detalles y asegura tu espacio hoy! Invierte en espacios flex industriales.</p>
             </div>
             <div class="contact-form-container">
@@ -301,37 +305,58 @@
                         <button type="submit" class="btn-primary">Enviar</button>
                     </div>
                 </form>
+                <div id="form-success" class="form-success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+                </div>
             </div>
         </div>
     </section>
     
     <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <!-- Columna Izquierda: Logo + Contacto -->
+            <div class="footer-section">
+                <img src="img/Logo.png" alt="Territorio Industrial Logo" class="footer-logo">
+                <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Tlajomulco de Zúñiga, Jalisco</li>
+                    <li><i class="fas fa-phone"></i> +52 (33) XXXX XXXX</li>
+                    <li><i class="fas fa-envelope"></i> info@territorioindustrial.com</li>
+                </ul>
+            </div>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <!-- Columna Izquierda: Logo + Contacto -->
-    <div class="footer-section">
-      <img src="img/Logo.png" alt="Territorio Industrial Logo" class="footer-logo">
-      <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
-      <ul class="footer-contact">
-        <li><i class="fas fa-map-marker-alt"></i> Tlajomulco de Zúñiga, Jalisco</li>
-        <li><i class="fas fa-phone"></i> +52 (33) XXXX XXXX</li>
-        <li><i class="fas fa-envelope"></i> info@territorioindustrial.mx</li>
-      </ul>
+            <!-- Columna Derecha: Redes Sociales -->
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="footer-social">
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Territorio Industrial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Toast de notificación -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <div class="toast-message">Mensaje enviado con éxito</div>
+        </div>
+        <div class="toast-progress"></div>
     </div>
 
-    <!-- Columna Derecha: Redes Sociales -->
-    <div class="footer-section">
-      <h4>Síguenos</h4>
-      <div class="footer-social">
-        <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 Territorio Industrial. Todos los derechos reservados.</p>
-  </div>
-</footer>
+    <script src="script.js"></script>
+</body>
+</html>
