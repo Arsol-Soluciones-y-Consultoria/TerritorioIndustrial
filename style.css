@@ -1,4 +1,4 @@
- /* Base Styles & Variables */
+/* Base Styles & Variables */
 :root {
     --primary-color: #2c2c2c;
     --secondary-color: #595959;
@@ -652,21 +652,4 @@ tr.highlight {
   .footer-social {
     justify-content: center; /* Centra los íconos de redes sociales en pantallas pequeñas */
   }
-}
-/* Mobile Menu Styles */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: var(--light-text);
-    transition: transform 0.3s ease;
 }
