@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Crear script para Google Maps API
         const googleMapsScript = document.createElement('script');
-        googleMapsScript.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
+        googleMapsScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDIPQ6-U_Fsa1fxKDC1lqYd1OqyVz3KrJ8&callback=initMap';
         googleMapsScript.async = true;
         googleMapsScript.defer = true;
         
