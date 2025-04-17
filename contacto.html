@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Territorio Industrial para más información sobre nuestros proyectos inmobiliarios industriales.">
+    <meta name="keywords" content="Territorio Industrial, contacto, desarrollos industriales, bodegas modulares, flex spaces, Guadalajara, Jalisco">
+    <title>Contacto | Territorio Industrial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Territorio Industrial Logo">
+                </a>
+            </div>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-section="inicio">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link" data-section="nosotros">Nosotros</a></li>
+                    <li><a href="proyectos.html" class="nav-link" data-section="proyectos">Proyectos</a></li>
+                    <li><a href="contacto.html" class="btn-primary nav-link active" data-section="contacto">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Menú móvil -->
+        <div id="mobile-nav">
+            <nav class="container">
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-section="inicio">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link" data-section="nosotros">Nosotros</a></li>
+                    <li><a href="proyectos.html" class="nav-link" data-section="proyectos">Proyectos</a></li>
+                    <li><a href="contacto.html" class="nav-link active" data-section="contacto">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content animate-fade-in">
+                <h1>CONTACTO</h1>
+                <h2>ESTAMOS PARA AYUDARTE</h2>
+                <p>Ponte en contacto con nosotros para más información sobre nuestros proyectos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info section-animate">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-text">
+                    <h2>Información de contacto</h2>
+                    <p>Estamos disponibles para atender tus consultas y brindarte toda la información que necesites sobre nuestros proyectos inmobiliarios industriales.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail-content">
+                                <h3>Dirección</h3>
+                                <p>Tlajomulco de Zúñiga, Jalisco</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-detail-content">
+                                <h3>Teléfono</h3>
+                                <p>+52 (33) XXXX XXXX</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-content">
+                                <h3>Correo electrónico</h3>
+                                <p>info@territorioindustrial.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-detail-content">
+                                <h3>Horario de atención</h3>
+                                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                                <p>Sábados: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-container">
+                        <form id="leadForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="interest" name="interest" required>
+                                    <option value="" disabled selected>¿Qué te interesa?</option>
+                                    <option value="inversion">Inversión</option>
+                                    <option value="renta">Renta</option>
+                                    <option value="informacion">Más información</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                        <div id="form-success" class="form-success">
+                            <i class="fas fa-check-circle"></i>
+                            <p>¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-section">
+                <div class="footer-logo-container">
+                    <img src="img/logo.png" alt="Territorio Industrial Logo" class="footer-logo">
+                </div>
+                <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Tlajomulco de Zúñiga, Jalisco</li>
+                    <li><i class="fas fa-phone"></i> +52 (33) XXXX XXXX</li>
+                    <li><i class="fas fa-envelope"></i> info@territorioindustrial.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="footer-social">
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Territorio Industrial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Toast de notificación -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <div class="toast-message">Mensaje enviado con éxito</div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
