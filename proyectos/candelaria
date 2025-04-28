@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto Candelaria - Desarrollo industrial con ubicación estratégica y excelente conectividad. Espacios diseñados para optimizar operaciones logísticas.">
+    <meta name="keywords" content="Candelaria, Territorio Industrial, desarrollos industriales, bodegas modulares, flex spaces, Guadalajara, Jalisco">
+    <title>Proyecto Candelaria | Territorio Industrial</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Territorio Industrial Logo">
+                </a>
+            </div>
+            <nav id="desktop-nav">
+                <ul>
+                    <li><a href="../index.html" class="nav-link" data-section="inicio">Inicio</a></li>
+                    <li><a href="../nosotros.html" class="nav-link" data-section="nosotros">Nosotros</a></li>
+                    <li><a href="../proyectos.html" class="nav-link active" data-section="proyectos">Proyectos</a></li>
+                    <li><a href="../contacto.html" class="btn-primary nav-link" data-section="contacto">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Menú móvil -->
+        <div id="mobile-nav">
+            <nav class="container">
+                <ul>
+                    <li><a href="../index.html" class="nav-link" data-section="inicio">Inicio</a></li>
+                    <li><a href="../nosotros.html" class="nav-link" data-section="nosotros">Nosotros</a></li>
+                    <li><a href="../proyectos.html" class="nav-link active" data-section="proyectos">Proyectos</a></li>
+                    <li><a href="../contacto.html" class="nav-link" data-section="contacto">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content animate-fade-in">
+                <h1>CANDELARIA</h1>
+                <h2>DESARROLLO INDUSTRIAL ESTRATÉGICO</h2>
+                <p>FUNCIONALIDAD | CONECTIVIDAD | DISEÑO</p>
+                <a href="#contacto" class="btn-primary">Contáctanos</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro section-animate" id="proyecto">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="section-title">Espacios industriales de vanguardia</h2>
+                <p>Un desarrollo industrial con ubicación estratégica y excelente conectividad. Espacios diseñados para optimizar operaciones logísticas y productivas.</p>
+            </div>
+            <div class="intro-info">
+                <p>Territorio Industrial presenta Candelaria, un proyecto industrial que combina funcionalidad, diseño moderno y ubicación estratégica. Ideal para empresas que buscan optimizar sus operaciones logísticas y productivas en un entorno industrial de primer nivel.</p>
+                <p>El proyecto cuenta con espacios versátiles que se adaptan a diferentes necesidades empresariales, desde almacenamiento y distribución hasta producción y oficinas administrativas, todo en un mismo lugar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-animate">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galería del proyecto</h2>
+                <p>CONOCE NUESTRAS INSTALACIONES</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3.jpg-CVLkM63gogo1ps4zPRfu51baO6A9kj.jpeg" alt="Fachada exterior del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Fachada principal</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2.jpg-6hJA5ayr0MCu7j8ere3ZGqnQiSffXQ.jpeg" alt="Vista lateral del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Diseño arquitectónico</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4.jpg-0VsReRTNUIHGBy4M9yWLVeRrgFPz8S.jpeg" alt="Entrada principal del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Acceso principal</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5.jpg-ycK6SpAaBSS7iwBnQt9ErBXTZJCEMd.jpeg" alt="Vista frontal del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Vista frontal</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.jpg-BlRyFsHg9YHzYxh6fIbNlkmlp7gc17.jpeg" alt="Área de descanso en el proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Área de descanso</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6.jpg-mx247VzX9QEhllVCDUcf1owKugnUk5.jpeg" alt="Recepción del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Área de recepción</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7.jpg-97ACuixVYAhYM3sQenH38aMz52U0YE.jpeg" alt="Escalera interior del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Conexión entre niveles</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8.jpg-0icgftCxOsy9qgK7zYg0HwLV2C63tv.jpeg" alt="Oficinas del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Espacios de trabajo</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/9.jpg-u8kXycJmY4XnSTqzO0tftOtU2u6zCh.jpeg" alt="Área de almacenamiento del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Área de almacenamiento</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/10.jpg-SQMZIyRHWEYeiIIeOlevlofb4C46LF.jpeg" alt="Nave industrial del proyecto Candelaria" class="shadow-img">
+                    <div class="gallery-caption">Nave industrial</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section-animate" id="caracteristicas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Características del proyecto</h2>
+                <p>DISEÑO FUNCIONAL Y MODERNO</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Diseño arquitectónico</h3>
+                    <p>Estructura moderna con acabados de alta calidad, combinando estética y funcionalidad para crear un espacio industrial de vanguardia.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Espacios versátiles</h3>
+                    <p>Áreas adaptables para diferentes necesidades: almacenamiento, producción, distribución y oficinas administrativas en un mismo lugar.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h3>Logística eficiente</h3>
+                    <p>Diseño optimizado para operaciones logísticas, con amplias áreas de carga y descarga, y espacios para maniobras de vehículos de carga.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Oficinas integradas</h3>
+                    <p>Espacios administrativos modernos y funcionales, diseñados para fomentar la productividad y el bienestar de los colaboradores.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguridad integral</h3>
+                    <p>Sistema de seguridad completo con control de acceso, vigilancia perimetral y protocolos de seguridad industrial.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Ubicación estratégica</h3>
+                    <p>Excelente conectividad con vías principales y acceso rápido a puntos estratégicos de la ciudad, optimizando tiempos de traslado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Specifications Section -->
+    <section class="specifications section-animate" id="especificaciones">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Especificaciones técnicas</h2>
+                <p>DETALLES CONSTRUCTIVOS Y TÉCNICOS</p>
+            </div>
+            
+            <div class="specs-grid">
+                <div class="specs-column">
+                    <h3>Estructura</h3>
+                    <ul class="specs-list">
+                        <li><span class="specs-dot"></span>Estructura metálica de alta resistencia</li>
+                        <li><span class="specs-dot"></span>Muros de block y lámina galvanizada</li>
+                        <li><span class="specs-dot"></span>Altura libre de 7 metros en área de nave</li>
+                        <li><span class="specs-dot"></span>Piso de concreto industrial de alta resistencia</li>
+                        <li><span class="specs-dot"></span>Iluminación natural a través de tragaluces</li>
+                    </ul>
+                </div>
+                
+                <div class="specs-column">
+                    <h3>Instalaciones</h3>
+                    <ul class="specs-list">
+                        <li><span class="specs-dot"></span>Instalación eléctrica trifásica</li>
+                        <li><span class="specs-dot"></span>Sistema de iluminación LED de alta eficiencia</li>
+                        <li><span class="specs-dot"></span>Preparaciones hidráulicas y sanitarias</li>
+                        <li><span class="specs-dot"></span>Sistema contra incendios</li>
+                        <li><span class="specs-dot"></span>Climatización en áreas de oficinas</li>
+                    </ul>
+                </div>
+                
+                <div class="specs-column">
+                    <h3>Áreas</h3>
+                    <ul class="specs-list">
+                        <li><span class="specs-dot"></span>Nave industrial: 500 m²</li>
+                        <li><span class="specs-dot"></span>Oficinas administrativas: 150 m²</li>
+                        <li><span class="specs-dot"></span>Área de carga y descarga: 200 m²</li>
+                        <li><span class="specs-dot"></span>Estacionamiento: 10 cajones</li>
+                        <li><span class="specs-dot"></span>Áreas comunes y servicios: 100 m²</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-animate" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p>¡Solicita más información sobre el proyecto Candelaria!</p>
+            </div>
+            <div class="contact-form-container">
+                <form id="leadForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="interest" name="interest" required>
+                            <option value="" disabled selected>¿Qué te interesa?</option>
+                            <option value="inversion">Inversión</option>
+                            <option value="renta">Renta</option>
+                            <option value="informacion">Más información</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-primary">Enviar</button>
+                    </div>
+                </form>
+                <div id="form-success" class="form-success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-section">
+                <div class="footer-logo-container">
+                    <img src="../img/logo.png" alt="Territorio Industrial Logo" class="footer-logo">
+                </div>
+                <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Av. B, Col. Seattle, 45150 Zapopan, Jal.</li>
+                    <li><i class="fas fa-phone"></i> +52 1 33 1148 6712</li>
+                    <li><i class="fas fa-envelope"></i> contacto@fterritorio.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="footer-social">
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Territorio Industrial. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Toast de notificación -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <div class="toast-message">Mensaje enviado con éxito</div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
