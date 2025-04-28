@@ -186,12 +186,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const mapElement = document.getElementById('google-map');
         
         if (mapElement) {
-            // Coordenadas de Tlajomulco de Zúñiga, Jalisco (aproximadas)
-            const tlajomulco = { lat: 20.4738, lng: -103.4471 };
+            // Coordenadas de Zapopan, Jalisco (actualizadas)
+            const zapopan = { lat: 20.6534, lng: -103.3914 };
             
             const map = new google.maps.Map(mapElement, {
                 zoom: 14,
-                center: tlajomulco,
+                center: zapopan,
                 styles: [
                     {
                         "featureType": "administrative",
@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Marcador para Territorio Industrial
             const marker = new google.maps.Marker({
-                position: tlajomulco,
+                position: zapopan,
                 map: map,
                 title: 'Territorio Industrial',
                 animation: google.maps.Animation.DROP
@@ -248,8 +248,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const contentString = `
                 <div style="padding: 10px; max-width: 200px;">
                     <h3 style="margin-top: 0; color: #2c2c2c; font-size: 16px;">Territorio Industrial</h3>
-                    <p style="margin-bottom: 5px; font-size: 14px;">Bodegas Santa Anita II</p>
-                    <p style="margin-bottom: 0; font-size: 12px;">Tlajomulco de Zúñiga, Jalisco</p>
+                    <p style="margin-bottom: 5px; font-size: 14px;">Av. B, Col. Seattle, 45150 Zapopan, Jal.</p>
+                    <p style="margin-bottom: 0; font-size: 12px;">+52 1 33 1148 6712</p>
                 </div>
             `;
             
@@ -292,10 +292,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const chatbotContainer = document.createElement('div');
         chatbotContainer.className = 'chatbot-container';
         
-        // Crear botón del chatbot
+        // Crear botón del chatbot con ícono de persona call center
         const chatbotButton = document.createElement('div');
         chatbotButton.className = 'chatbot-button';
-        chatbotButton.innerHTML = '<i class="fas fa-comment"></i>';
+        chatbotButton.innerHTML = '<i class="fas fa-headset"></i>';
         
         // Crear ventana del chatbot
         const chatbotWindow = document.createElement('div');
@@ -406,10 +406,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     addBotMessage("Nuestras bodegas tienen precios competitivos en el mercado. Para información detallada sobre precios, por favor completa el formulario de contacto y un asesor se comunicará contigo a la brevedad.");
                 }
                 else if (lowerMessage.includes('ubicación') || lowerMessage.includes('donde') || lowerMessage.includes('dirección')) {
-                    addBotMessage("Nuestro proyecto BSA II se encuentra en Tlajomulco de Zúñiga, Jalisco, con excelente ubicación y acceso a vías principales. Puedes ver la ubicación exacta en la sección de ubicación de nuestro sitio.");
+                    addBotMessage("Nuestra oficina se encuentra en Av. B, Col. Seattle, 45150 Zapopan, Jal. Puedes ver la ubicación exacta en la sección de ubicación de nuestro sitio.");
                 }
                 else if (lowerMessage.includes('contacto') || lowerMessage.includes('teléfono') || lowerMessage.includes('email')) {
-                    addBotMessage("Puedes contactarnos al teléfono +52 (33) XXXX XXXX o por correo a info@territorioindustrial.com. También puedes usar nuestro formulario de contacto en la página.");
+                    addBotMessage("Puedes contactarnos al teléfono +52 1 33 1148 6712 o por correo a contacto@fterritorio.com. También puedes usar nuestro formulario de contacto en la página.");
                 }
                 else if (lowerMessage.includes('características') || lowerMessage.includes('detalles') || lowerMessage.includes('especificaciones')) {
                     addBotMessage("Nuestras bodegas modulares tienen aproximadamente 270m² de construcción, con diseño flexible para adaptarse a diferentes necesidades. Cuentan con excelente altura, instalaciones eléctricas de calidad y acceso para carga y descarga.");
@@ -418,7 +418,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     addBotMessage("Invertir en nuestras bodegas industriales ofrece excelente rentabilidad y plusvalía. La zona presenta un entorno favorable para la inversión industrial, con ubicación estratégica, infraestructura robusta y perspectivas de crecimiento sostenido.");
                 }
                 else {
-                    addBotMessage("Gracias por tu mensaje. Para información más detallada, te recomendamos contactar directamente con nuestro equipo a través del formulario de contacto o llamando al +52 (33) XXXX XXXX.");
+                    addBotMessage("Gracias por tu mensaje. Para información más detallada, te recomendamos contactar directamente con nuestro equipo a través del formulario de contacto o llamando al +52 1 33 1148 6712.");
                 }
             }, 1000);
         }
