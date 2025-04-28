@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce los proyectos inmobiliarios industriales de Territorio Industrial.">
-    <meta name="keywords" content="Territorio Industrial, proyectos, desarrollos industriales, bodegas modulares, flex spaces, Guadalajara, Jalisco">
-    <title>Proyectos | Territorio Industrial</title>
+    <meta name="description" content="Proyectos de Territorio Industrial - Desarrollos inmobiliarios industriales con enfoque en calidad, ubicación estratégica y plusvalía.">
+    <meta name="keywords" content="Territorio Industrial, proyectos industriales, bodegas modulares, flex spaces, inversión industrial, Guadalajara, Jalisco">
+    <title>Nuestros Proyectos | Territorio Industrial</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header Navigation -->
@@ -49,51 +50,162 @@
         </div>
     </header>
 
-    <!-- Projects Hero Section -->
-    <section class="page-hero">
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('img/hero-background.jpg');">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="page-hero-content animate-fade-in">
+            <div class="hero-content animate-fade-in">
                 <h1>NUESTROS PROYECTOS</h1>
                 <h2>DESARROLLOS INMOBILIARIOS INDUSTRIALES</h2>
-                <p>Conoce nuestros desarrollos inmobiliarios industriales</p>
+                <p>CALIDAD | UBICACIÓN | PLUSVALÍA</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-page section-animate" id="proyectos">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Desarrollos Industriales</h2>
+                <p>CONOCE NUESTROS PROYECTOS INMOBILIARIOS</p>
+            </div>
+
+            <div class="projects-grid-large">
+                <div class="project-card-large" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image-large">
+                        <img src="img/santa-anita.jpg" alt="Proyecto BSA II - Bodegas Santa Anita" class="shadow-img">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>BSA II - Bodegas Santa Anita</h3>
+                        <p>Flex spaces y bodegas modulares en Guadalajara. Inversión inteligente con excelente ubicación y alta plusvalía.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Espacios industriales flexibles</li>
+                            <li><i class="fas fa-check-circle"></i> Ubicación estratégica en Santa Anita</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño moderno y funcional</li>
+                            <li><i class="fas fa-check-circle"></i> Alta plusvalía y retorno de inversión</li>
+                        </ul>
+                        <a href="proyectos/santa-anita.html" class="btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+                
+                <div class="project-card-large" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image-large">
+                        <img src="img/bsa-1.jpg" alt="Proyecto BSA I - Bodegas Santa Anita I" class="shadow-img">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>BSA I - Bodegas Santa Anita I</h3>
+                        <p>Nuestro primer desarrollo de bodegas modulares en la zona de Santa Anita. Un proyecto exitoso con alta demanda.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Proyecto completamente vendido</li>
+                            <li><i class="fas fa-check-circle"></i> Excelente ubicación comercial</li>
+                            <li><i class="fas fa-check-circle"></i> Espacios industriales funcionales</li>
+                            <li><i class="fas fa-check-circle"></i> Alta rentabilidad para inversionistas</li>
+                        </ul>
+                        <a href="proyectos/bsa-1.html" class="btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+                
+                <div class="project-card-large" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image-large">
+                        <img src="img/candelaria.jpg" alt="Proyecto Candelaria" class="shadow-img">
+                    </div>
+                    <div class="project-info-large">
+                        <h3>Candelaria</h3>
+                        <p>Desarrollo industrial con ubicación estratégica y excelente conectividad. Espacios diseñados para optimizar operaciones logísticas.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Espacios industriales de vanguardia</li>
+                            <li><i class="fas fa-check-circle"></i> Conectividad con vías principales</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño optimizado para logística</li>
+                            <li><i class="fas fa-check-circle"></i> Oficinas integradas y áreas comunes</li>
+                        </ul>
+                        <a href="proyectos/candelaria.html" class="btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects List Section -->
-    <section class="projects-list section-animate">
+    <!-- Investment Calculator Section -->
+    <section class="calculator section-animate" id="calculadora">
         <div class="container">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/santa-anita.jpg" alt="Proyecto BSA II - Bodegas Santa Anita" class="shadow-img">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Calculadora de Inversión</h2>
+                <p>CALCULA EL RETORNO DE TU INVERSIÓN</p>
+            </div>
+            
+            <div class="calculator-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="investment-amount">Monto de inversión (MXN)</label>
+                        <input type="number" id="investment-amount" value="1000000" min="100000" step="100000">
                     </div>
-                    <div class="project-info">
-                        <h3>BSA II - Bodegas Santa Anita</h3>
-                        <p>Flex spaces y bodegas modulares en Guadalajara. Inversión inteligente con excelente ubicación y alta plusvalía.</p>
-                        <a href="proyectos/santa-anita.html" class="project-link">Ver proyecto</a>
+                    <div class="form-group">
+                        <label for="investment-term">Plazo de inversión (años)</label>
+                        <input type="number" id="investment-term" value="5" min="1" max="20">
+                    </div>
+                    <div class="form-group">
+                        <label for="annual-return">Rendimiento anual estimado (%)</label>
+                        <input type="number" id="annual-return" value="12" min="1" max="30">
+                    </div>
+                    <div class="form-group">
+                        <button id="calculate-btn" class="btn-primary">Calcular</button>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/bsa-1.jpg" alt="Proyecto BSA I - Bodegas Santa Anita I" class="shadow-img">
+                <div class="calculator-results">
+                    <h3>Resultados de tu inversión</h3>
+                    <div class="result-item">
+                        <span class="result-label">Inversión inicial:</span>
+                        <span class="result-value" id="initial-investment">$1,000,000.00 MXN</span>
                     </div>
-                    <div class="project-info">
-                        <h3>BSA I - Bodegas Santa Anita I</h3>
-                        <p>Nuestro primer desarrollo de bodegas modulares en la zona de Santa Anita. Un proyecto exitoso con alta demanda.</p>
-                        <a href="proyectos/santa-anita2.html" class="project-link">Ver proyecto</a>
+                    <div class="result-item">
+                        <span class="result-label">Valor futuro:</span>
+                        <span class="result-value" id="future-value">$1,762,341.68 MXN</span>
                     </div>
+                    <div class="result-item">
+                        <span class="result-label">Ganancia total:</span>
+                        <span class="result-value" id="total-profit">$762,341.68 MXN</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Rendimiento total:</span>
+                        <span class="result-value" id="total-return">76.23%</span>
+                    </div>
+                    <p class="calculator-disclaimer">
+                        *Esta calculadora proporciona estimaciones basadas en los datos ingresados. Los rendimientos reales pueden variar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="location section-animate" id="ubicacion">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Ubicación de Nuestros Proyectos</h2>
+                <p>ESTRATÉGICAMENTE UBICADOS PARA TU NEGOCIO</p>
+            </div>
+            
+            <div class="location-content">
+                <div class="location-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Ventajas de nuestras ubicaciones</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Todos nuestros proyectos están ubicados en zonas estratégicas con excelente conectividad.</p>
+                    <p><i class="fas fa-road"></i> Acceso directo a vías principales y rápida conexión con carreteras federales.</p>
+                    <p><i class="fas fa-truck"></i> Ubicaciones ideales para operaciones logísticas y de distribución.</p>
+                    <p><i class="fas fa-chart-line"></i> Zonas con alta plusvalía y potencial de crecimiento.</p>
+                    
+                    <h3 class="mt-30">Visita nuestros proyectos</h3>
+                    <p>Te invitamos a conocer personalmente nuestros desarrollos. Agenda una cita con uno de nuestros asesores para visitar el proyecto que más te interese.</p>
+                    <a href="contacto.html" class="btn-primary mt-30">Agendar visita</a>
                 </div>
                 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/candelaria.jpg" alt="Proyecto Candelaria" class="shadow-img">
-                    </div>
-                    <div class="project-info">
-                        <h3>Candelaria</h3>
-                        <p>Desarrollo industrial con ubicación estratégica y excelente conectividad. Espacios diseñados para optimizar operaciones logísticas.</p>
-                        <a href="proyectos/candelaria.html" class="project-link">Ver proyecto</a>
+                <div class="location-map" data-aos="fade-left" data-aos-delay="200">
+                    <!-- Google Maps iframe -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14932.301594682693!2d-103.4408!3d20.6596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4e98d5453d%3A0xc4fdd3929a2ecad1!2sZapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1651234567890!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -103,11 +215,11 @@
     <!-- Contact Section -->
     <section class="contact section-animate" id="contacto">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Contáctanos</h2>
-                <p>¡Estamos para ayudarte! Contáctanos para más información sobre nuestros proyectos.</p>
+                <p>¡Solicita más información sobre nuestros proyectos!</p>
             </div>
-            <div class="contact-form-container">
+            <div class="contact-form-container" data-aos="zoom-in" data-aos-delay="100">
                 <form id="leadForm" class="contact-form">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Nombre completo" required>
@@ -191,6 +303,41 @@
         <div class="toast-progress"></div>
     </div>
 
+    <!-- Chat Button -->
+    <button id="chat-button" class="chat-button" aria-label="Abrir chat">
+        <i class="fas fa-headset"></i>
+    </button>
+
+    <!-- Chat Container -->
+    <div id="chat-container" class="chat-container">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-headset"></i>
+                <span>Asistente Virtual</span>
+            </div>
+            <button id="close-chat" class="close-chat" aria-label="Cerrar chat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        ¡Hola! Soy el asistente virtual de Territorio Industrial. ¿En qué puedo ayudarte hoy?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                <button id="send-message" aria-label="Enviar mensaje">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
