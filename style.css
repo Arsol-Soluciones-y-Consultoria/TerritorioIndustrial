@@ -1,347 +1,1015 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Territorio Industrial desarrolla proyectos inmobiliarios industriales con enfoque en la calidad, ubicación estratégica y plusvalía.">
-    <meta name="keywords" content="Territorio Industrial, desarrollos industriales, bodegas modulares, flex spaces, inversión industrial, Guadalajara, Jalisco">
-    <title>Territorio Industrial | Desarrollos Inmobiliarios Industriales</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Header Navigation -->
-    <header id="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="Territorio Industrial Logo">
-                </a>
-            </div>
-            <nav id="desktop-nav">
-                <ul>
-                    <li><a href="index.html" class="nav-link active" data-section="inicio">Inicio</a></li>
-                    <li><a href="nosotros.html" class="nav-link" data-section="nosotros">Nosotros</a></li>
-                    <li><a href="proyectos.html" class="nav-link" data-section="proyectos">Proyectos</a></li>
-                    <li><a href="contacto.html" class="btn-primary nav-link" data-section="contacto">Contáctanos</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        
-        <!-- Menú móvil -->
-        <div id="mobile-nav">
-            <nav class="container">
-                <ul>
-                    <li><a href="index.html" class="nav-link active" data-section="inicio">Inicio</a></li>
-                    <li><a href="nosotros.html" class="nav-link" data-section="nosotros">Nosotros</a></li>
-                    <li><a href="proyectos.html" class="nav-link" data-section="proyectos">Proyectos</a></li>
-                    <li><a href="contacto.html" class="nav-link" data-section="contacto">Contáctanos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Variables */
+:root {
+    --primary-color: #1a2a3a;
+    --secondary-color: #2c3e50;
+    --accent-color: #e67e22;
+    --light-color: #f5f5f5;
+    --dark-color: #333;
+    --text-color: #444;
+    --border-radius: 4px;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
 
-    <!-- Hero Section -->
-    <section class="hero" style="background-image: url('img/hero-background.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content animate-fade-in">
-                <h1>TERRITORIO INDUSTRIAL</h1>
-                <h2>DESARROLLOS INMOBILIARIOS INDUSTRIALES</h2>
-                <p>CALIDAD | UBICACIÓN | PLUSVALÍA</p>
-                <a href="#proyectos" class="btn-primary">Conoce nuestros proyectos</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- About Section -->
-    <section class="intro section-animate" id="nosotros">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Quiénes Somos</h2>
-                <p>TERRITORIO INDUSTRIAL | DESARROLLOS INMOBILIARIOS</p>
-            </div>
+html {
+    scroll-behavior: smooth;
+}
 
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Territorio Industrial es una empresa dedicada al desarrollo de proyectos inmobiliarios industriales, con un enfoque en la calidad, ubicación estratégica y plusvalía para nuestros clientes.</p>
-                    <p>Nuestro objetivo es crear espacios industriales que combinen funcionalidad, diseño y valor, ofreciendo soluciones inmobiliarias que se adapten a las necesidades específicas de cada cliente.</p>
-                    <p>Con años de experiencia en el sector inmobiliario industrial, hemos desarrollado proyectos que se distinguen por su excelente ubicación, calidad constructiva y atención al detalle.</p>
-                    <a href="nosotros.html" class="btn-primary">Conoce más</a>
-                </div>
-                <div class="about-image">
-                    <img src="img/about-image.jpg" alt="Territorio Industrial" class="shadow-img">
-                </div>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+    overflow-x: hidden;
+}
 
-    <!-- Services Section -->
-    <section class="services section-animate" id="servicios">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nuestros Servicios</h2>
-                <p>SOLUCIONES INMOBILIARIAS INDUSTRIALES</p>
-            </div>
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
 
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Desarrollos Industriales</h3>
-                    <p>Creamos espacios industriales de alta calidad, con ubicaciones estratégicas y diseños funcionales que se adaptan a las necesidades de nuestros clientes.</p>
-                </div>
-                
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Inversión Inmobiliaria</h3>
-                    <p>Ofrecemos oportunidades de inversión en proyectos inmobiliarios industriales con alto potencial de plusvalía y rentabilidad.</p>
-                </div>
-                
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Asesoría Especializada</h3>
-                    <p>Brindamos asesoría especializada en el sector inmobiliario industrial, ayudando a nuestros clientes a tomar las mejores decisiones para sus negocios.</p>
-                </div>
-                
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-warehouse"></i>
-                    </div>
-                    <h3>Bodegas Modulares</h3>
-                    <p>Desarrollamos bodegas modulares que se adaptan a diferentes necesidades, ofreciendo flexibilidad y funcionalidad en espacios industriales.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+ul {
+    list-style: none;
+}
 
-    <!-- Projects Section -->
-    <section class="projects section-animate" id="proyectos">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nuestros Proyectos</h2>
-                <p>DESARROLLOS INMOBILIARIOS INDUSTRIALES</p>
-            </div>
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/santa-anita.jpg" alt="Proyecto BSA II - Bodegas Santa Anita" class="shadow-img">
-                    </div>
-                    <div class="project-info">
-                        <h3>BSA II - Bodegas Santa Anita</h3>
-                        <p>Flex spaces y bodegas modulares en Guadalajara. Inversión inteligente con excelente ubicación y alta plusvalía.</p>
-                        <a href="proyectos/santa-anita.html" class="project-link">Ver proyecto</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/bsa-1.jpg" alt="Proyecto BSA I - Bodegas Santa Anita I" class="shadow-img">
-                    </div>
-                    <div class="project-info">
-                        <h3>BSA I - Bodegas Santa Anita I</h3>
-                        <p>Nuestro primer desarrollo de bodegas modulares en la zona de Santa Anita. Un proyecto exitoso con alta demanda.</p>
-                        <a href="proyectos/bsa-1.html" class="project-link">Ver proyecto</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/candelaria.jpg" alt="Proyecto Candelaria" class="shadow-img">
-                    </div>
-                    <div class="project-info">
-                        <h3>Candelaria</h3>
-                        <p>Desarrollo industrial con ubicación estratégica y excelente conectividad. Espacios diseñados para optimizar operaciones logísticas.</p>
-                        <a href="proyectos/candelaria.html" class="project-link">Ver proyecto</a>
-                    </div>
-                </div>
-            </div>
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-            <div class="text-center mt-40">
-                <a href="proyectos.html" class="btn-primary">Ver todos los proyectos</a>
-            </div>
-        </div>
-    </section>
+.section-animate {
+    padding: 80px 0;
+}
 
-    <!-- Location Map Section -->
-    <section class="location section-animate" id="ubicacion">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Ubicación</h2>
-                <p>ESTRATÉGICAMENTE UBICADOS PARA TU NEGOCIO</p>
-            </div>
-            
-            <div class="location-content">
-                <div class="location-info">
-                    <h3>Ventajas de nuestras ubicaciones</h3>
-                    <ul class="custom-list">
-                        <li>Todos nuestros proyectos están ubicados en zonas estratégicas con excelente conectividad.</li>
-                        <li>Acceso directo a vías principales y rápida conexión con carreteras federales.</li>
-                        <li>Ubicaciones ideales para operaciones logísticas y de distribución.</li>
-                        <li>Zonas con alta plusvalía y potencial de crecimiento.</li>
-                    </ul>
-                </div>
-                
-                <div class="location-map">
-                    <!-- Google Maps iframe -->
-                    <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14932.301594682693!2d-103.4408!3d20.6596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4e98d5453d%3A0xc4fdd3929a2ecad1!2sZapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1651234567890!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-    <!-- Contact Section -->
-    <section class="contact section-animate" id="contacto">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contáctanos</h2>
-                <p>¡Estamos para ayudarte! Contáctanos para más información sobre nuestros proyectos.</p>
-            </div>
-            <div class="contact-form-container">
-                <form id="leadForm" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Nombre completo" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
-                    </div>
-                    <div class="form-group">
-                        <select id="interest" name="interest" required>
-                            <option value="" disabled selected>¿Qué te interesa?</option>
-                            <option value="inversion">Inversión</option>
-                            <option value="renta">Renta</option>
-                            <option value="informacion">Más información</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn-primary">Enviar</button>
-                    </div>
-                </form>
-                <div id="form-success" class="form-success">
-                    <i class="fas fa-check-circle"></i>
-                    <p>¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-section">
-                <div class="footer-logo-container">
-                    <img src="img/logo.png" alt="Territorio Industrial Logo" class="footer-logo">
-                </div>
-                <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
-                <ul class="footer-contact">
-                    <li><i class="fas fa-map-marker-alt"></i> Av. B, Col. Seattle, 45150 Zapopan, Jal.</li>
-                    <li><i class="fas fa-phone"></i> +52 1 33 1148 6712</li>
-                    <li><i class="fas fa-envelope"></i> contacto@fterritorio.com</li>
-                </ul>
-            </div>
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
 
-            <div class="footer-section">
-                <h4>Síguenos</h4>
-                <div class="footer-social">
-                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
 
-        <div class="footer-bottom">
-            <p>&copy; <span id="current-year"></span> Territorio Industrial. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
 
-    <!-- Botón de volver arriba -->
-    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+.btn-primary:hover {
+    background-color: #d35400;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
-    <!-- Toast de notificación -->
-    <div id="toast" class="toast">
-        <div class="toast-content">
-            <i class="fas fa-check-circle"></i>
-            <div class="toast-message">Mensaje enviado con éxito</div>
-        </div>
-        <div class="toast-progress"></div>
-    </div>
+.text-center {
+    text-align: center;
+}
 
-    <!-- Chat Button -->
-    <button id="chat-button" class="chat-button" aria-label="Abrir chat">
-        <i class="fas fa-headset"></i>
-    </button>
+.mt-30 {
+    margin-top: 30px;
+}
 
-    <!-- Chat Container -->
-    <div id="chat-container" class="chat-container">
-        <div class="chat-header">
-            <div class="chat-title">
-                <i class="fas fa-headset"></i>
-                <span>Asistente Virtual</span>
-            </div>
-            <button id="close-chat" class="close-chat" aria-label="Cerrar chat">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="chat-body">
-            <div id="chat-messages" class="chat-messages">
-                <div class="message assistant">
-                    <div class="message-content">
-                        ¡Hola! Soy el asistente virtual de Territorio Industrial. ¿En qué puedo ayudarte hoy?
-                    </div>
-                </div>
-            </div>
-            <div class="chat-input">
-                <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
-                <button id="send-message" aria-label="Enviar mensaje">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-    </div>
+.mt-40 {
+    margin-top: 40px;
+}
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Inicializar AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
-    </script>
-    <script src="script.js"></script>
-</body>
-</html>
+.shadow-img {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.shadow-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Animaciones */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header y navegación */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+#header.scrolled {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    transition: var(--transition);
+}
+
+#desktop-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+#desktop-nav .nav-link {
+    color: var(--dark-color);
+    font-weight: 600;
+    position: relative;
+    padding: 5px 0;
+}
+
+#desktop-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: var(--transition);
+}
+
+#desktop-nav .nav-link:hover::after,
+#desktop-nav .nav-link.active::after {
+    width: 100%;
+}
+
+#desktop-nav .nav-link.active {
+    color: var(--accent-color);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--dark-color);
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+#mobile-nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    z-index: 999;
+}
+
+#mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#mobile-nav .nav-link {
+    display: block;
+    padding: 10px 0;
+    font-weight: 600;
+    color: var(--dark-color);
+    border-bottom: 1px solid #eee;
+}
+
+#mobile-nav .nav-link.active {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width:0,0,0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-indicator i {
+    font-size: 2rem;
+    color: white;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* About Section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about-text .btn-primary {
+    margin-top: 10px;
+}
+
+/* Services Section */
+.services {
+    background-color: var(--light-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.project-info p {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.project-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.project-link:hover::after {
+    width: 100%;
+}
+
+/* Location Section */
+.location {
+    background-color: var(--light-color);
+}
+
+.location-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.location-info h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.location-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.location-info p i {
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.map-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+/* Calculator Section */
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+}
+
+.calculator-form .form-group {
+    margin-bottom: 20px;
+}
+
+.calculator-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.calculator-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.calculator-results {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+}
+
+.calculator-results h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.result-label {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.result-value {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.calculator-disclaimer {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Virtual Assistant */
+.chat-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    border: none;
+    transition: var(--transition);
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+}
+
+.chat-button i {
+    font-size: 1.5rem;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.chat-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message-content {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+}
+
+.message.assistant .message-content {
+    background-color: #f1f1f1;
+}
+
+.message.user .message-content {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.chat-input button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.chat-input button:hover {
+    background-color: #d35400;
+}
+
+/* Contact Section */
+.contact-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.form-success {
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+
+.form-success i {
+    font-size: 3rem;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.footer-logo-container {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 60px;
+}
+
+.footer-tagline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    margin-bottom: 30px;
+}
+
+.footer-contact li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact li i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.footer h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 99;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: #d35400;
+    transform: translateY(-5px);
+}
+
+/* Toast notification */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+.toast.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.toast-content i {
+    font-size: 1.5rem;
+    color: #27ae60;
+    margin-right: 15px;
+}
+
+.toast-progress {
+    height: 3px;
+    background-color: var(--accent-color);
+    width: 100%;
+    animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .section-animate {
+        padding: 60px 0;
+    }
+    
+    .about-content,
+    .location-content,
+    .calculator-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    #desktop-nav {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    #mobile-nav.active {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-animate {
+        padding: 40px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .contact-form-container {
+        padding: 20px;
+    }
+    
+    .chat-container {
+        width: 300px;
+        right: 10px;
+    }
+}
