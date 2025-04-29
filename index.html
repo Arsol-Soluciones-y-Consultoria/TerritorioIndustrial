@@ -50,7 +50,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" style="background-image: url('img/entrada.png');">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content animate-fade-in">
@@ -151,7 +151,7 @@
                     <div class="project-info">
                         <h3>BSA II - Bodegas Santa Anita</h3>
                         <p>Flex spaces y bodegas modulares en Guadalajara. Inversión inteligente con excelente ubicación y alta plusvalía.</p>
-                        <a href="proyectos/santa-anita.html" class="project-link">Ver proyecto →</a>
+                        <a href="proyectos/santa-anita2.html" class="project-link">Ver proyecto →</a>
                     </div>
                 </div>
                 
@@ -162,7 +162,7 @@
                     <div class="project-info">
                         <h3>BSA I - Bodegas Santa Anita I</h3>
                         <p>Nuestro primer desarrollo de bodegas modulares en la zona de Santa Anita. Un proyecto exitoso con alta demanda.</p>
-                        <a href="proyectos/santa-anita2.html" class="project-link">Ver proyecto →</a>
+                        <a href="proyectos/santa-anita.html" class="project-link">Ver proyecto →</a>
                     </div>
                 </div>
                 
@@ -184,47 +184,36 @@
         </div>
     </section>
     
-    <!-- Actualizar el HTML para incluir el botón de chat y las nuevas secciones -->
-
-    <!-- Después de la sección de proyectos, agregar la sección de mapa -->
-    <section class="location-map-section section-animate" id="ubicacion">
+    <!-- Location Section con Google Maps -->
+    <section class="location section-animate" id="ubicacion">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Ubicación Estratégica</h2>
-                <p>CONECTIVIDAD Y ACCESIBILIDAD PARA TU NEGOCIO</p>
+                <h2 class="section-title">Ubicación</h2>
+                <p>ESTRATÉGICAMENTE UBICADOS PARA TU NEGOCIO</p>
             </div>
             
-            <div class="map-container">
-                <img src="img/mapa.png" alt="Mapa de ubicación" class="map-image">
-                <div class="map-overlay">
-                    <h3>Puntos Estratégicos</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 1: BSA II - Bodegas Santa Anita</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 2: Oficinas Corporativas</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 3: Conexión Periférico</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 4: BSA I - Bodegas Santa Anita I</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 5: Proyecto Candelaria</li>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Ventajas de nuestras ubicaciones</h3>
+                    <ul class="custom-list">
+                        <li>Todos nuestros proyectos están ubicados en zonas estratégicas con excelente conectividad.</li>
+                        <li>Acceso directo a vías principales y rápida conexión con carreteras federales.</li>
+                        <li>Ubicaciones ideales para operaciones logísticas y de distribución.</li>
+                        <li>Zonas con alta plusvalía y potencial de crecimiento.</li>
                     </ul>
+                </div>
+                
+                <div class="location-map">
+                    <!-- Google Maps iframe -->
+                    <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14932.301594682693!2d-103.4408!3d20.6596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4e98d5453d%3A0xc4fdd3929a2ecad1!2sAv.%20B%2C%20Col.%20Seattle%2C%2045150%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1651234567890!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Agregar la sección de master plan -->
-    <section class="master-plan-section section-animate">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Máster Plan</h2>
-                <p>DISEÑO OPTIMIZADO PARA MAXIMIZAR EFICIENCIA</p>
-            </div>
-            
-            <img src="img/planos.png" alt="Master Plan" class="plan-image">
-        </div>
-    </section>
-
-    <!-- Agregar la sección de slogan -->
+    <!-- Slogan Section -->
     <section class="slogan-section section-animate">
-        <img src="img/publicidad.png" alt="Tu bodega modular, tu punto en la ciudad" class="slogan-image">
+        <img src="img/letrero.png" alt="Tu bodega modular, tu punto en la ciudad" class="slogan-image">
         <div class="container">
             <div class="slogan-content">
                 <h2>Tu bodega modular,</h2>
@@ -326,7 +315,6 @@
     </div>
 
     <!-- Agregar el botón de chat y el contenedor del chat antes del cierre del body -->
-    <!-- Cambiar el icono del botón de chat a un operador de call center -->
     <!-- Chat Button -->
     <button id="chat-button" class="chat-button" aria-label="Abrir chat">
         <i class="fas fa-headset"></i>
