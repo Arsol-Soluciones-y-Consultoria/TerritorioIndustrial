@@ -6,13 +6,13 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 />
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conoce más sobre Territorio Industrial, empresa dedicada al desarrollo de proyectos inmobiliarios industriales.">
     <meta name="keywords" content="Territorio Industrial, nosotros, misión, visión, valores, desarrollos industriales, Guadalajara, Jalisco">
     <title>Nosotros | Territorio Industrial</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -56,13 +56,17 @@
     </header>
 
     <!-- About Hero Section -->
-    <section class="page-hero">
+    <section class="hero" style="background-image: url('img/Calle.png');">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="page-hero-content animate-fade-in">
+            <div class="hero-content animate-fade-in">
                 <h1>NOSOTROS</h1>
                 <h2>CONOCE TERRITORIO INDUSTRIAL</h2>
                 <p>Desarrollamos proyectos inmobiliarios industriales con enfoque en la calidad, ubicación estratégica y plusvalía</p>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
@@ -71,13 +75,13 @@
         <div class="container">
             <div class="about-history">
                 <div class="about-history-text">
-                    <h2>Nuestra Historia</h2>
+                    <h2 class="section-title">Nuestra Historia</h2>
                     <p>Territorio Industrial nace de la visión de crear espacios industriales que combinen ubicación estratégica, calidad constructiva y plusvalía para nuestros clientes.</p>
                     <p>Con años de experiencia en el sector inmobiliario industrial, hemos desarrollado proyectos que se distinguen por su excelente ubicación, diseño funcional y atención a las necesidades específicas de nuestros clientes.</p>
                     <p>Nuestro compromiso es ofrecer soluciones inmobiliarias industriales que representen una inversión inteligente y rentable a largo plazo.</p>
                 </div>
                 <div class="about-history-image">
-                    <img src="img/about-image.jpg" alt="Territorio Industrial" class="shadow-img">
+                    <img src="img/6.jpg.png" alt="Territorio Industrial" class="shadow-img">
                 </div>
             </div>
         </div>
@@ -164,11 +168,11 @@
                 <div class="footer-logo-container">
                     <img src="img/logo.png" alt="Territorio Industrial Logo" class="footer-logo">
                 </div>
-                <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
+                <p class="footer-tagline">TODO CABE EN EL TERRITORIO CORRECTO</p>
                 <ul class="footer-contact">
-                    <li><i class="fas fa-map-marker-alt"></i> Tlajomulco de Zúñiga, Jalisco</li>
-                    <li><i class="fas fa-phone"></i> +52 (33) XXXX XXXX</li>
-                    <li><i class="fas fa-envelope"></i> info@territorioindustrial.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. B, Col. Seattle, 45150 Zapopan, Jal.</li>
+                    <li><i class="fas fa-phone"></i> +52 1 33 1148 6712</li>
+                    <li><i class="fas fa-envelope"></i> contacto@fterritorio.com</li>
                 </ul>
             </div>
 
@@ -198,24 +202,39 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- Toast de notificación -->
-    <div id="toast" class="toast">
-        <div class="toast-content">
-            <i class="fas fa-check-circle"></i>
-            <div class="toast-message">Mensaje enviado con éxito</div>
+    <!-- Chat Button -->
+    <button id="chat-button" class="chat-button" aria-label="Abrir chat">
+        <i class="fas fa-headset"></i>
+    </button>
+
+    <!-- Chat Container -->
+    <div id="chat-container" class="chat-container">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-headset"></i>
+                <span>Asistente Virtual</span>
+            </div>
+            <button id="close-chat" class="close-chat" aria-label="Cerrar chat">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
-        <div class="toast-progress"></div>
+        <div class="chat-body">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        ¡Hola! Soy el asistente virtual de Territorio Industrial. ¿En qué puedo ayudarte hoy?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                <button id="send-message" aria-label="Enviar mensaje">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-    <!-- Chat Button -->
-<button id="chat-button" class="chat-button" aria-label="Abrir chat">
-    <i class="fas fa-headset"></i>
-</button>
-
-<!-- Chat Container -->
-<div id="chat-container" class="chat-container">
-    <!-- Contenido del chat -->
-</div>
 </html>
