@@ -82,19 +82,19 @@ document.addEventListener('DOMContentLoaded', function() {
             // Por ahora, solo simulamos el envío exitoso
             
             if (formSuccess) {
-                formSuccess.style.display = 'flex';
+                formSuccess.classList.add('show');
                 contactForm.reset();
                 
                 setTimeout(function() {
-                    formSuccess.style.display = 'none';
+                    formSuccess.classList.remove('show');
                 }, 5000);
             } else if (toast) {
                 // Si no hay mensaje de éxito en el formulario, mostrar toast
-                toast.classList.add('active');
+                toast.classList.add('show');
                 contactForm.reset();
                 
                 setTimeout(function() {
-                    toast.classList.remove('active');
+                    toast.classList.remove('show');
                 }, 5000);
             }
         });
@@ -110,14 +110,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (chatButton && chatContainer) {
         chatButton.addEventListener('click', function() {
-            chatContainer.style.display = 'flex';
+            chatContainer.classList.add('active');
             chatButton.style.display = 'none';
         });
     }
     
     if (closeChat && chatContainer && chatButton) {
         closeChat.addEventListener('click', function() {
-            chatContainer.style.display = 'none';
+            chatContainer.classList.remove('active');
             chatButton.style.display = 'flex';
         });
     }
