@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacta con Territorio Industrial para más información sobre nuestros proyectos inmobiliarios industriales.">
-    <meta name="keywords" content="Territorio Industrial, contacto, desarrollos industriales, bodegas modulares, flex spaces, Guadalajara, Jalisco">
-    <title>Contacto | Territorio Industrial</title>
+    <meta name="description" content="Contacta con Territorio Industrial - Desarrollos inmobiliarios industriales con enfoque en calidad, ubicación estratégica y plusvalía.">
+    <meta name="keywords" content="Territorio Industrial, contacto, desarrollos industriales, bodegas modulares, flex spaces, inversión industrial, Guadalajara, Jalisco">
+    <title>Contáctanos | Territorio Industrial</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,102 +49,130 @@
         </div>
     </header>
 
-    <!-- Contact Hero Section -->
-    <section class="page-hero">
+    <!-- Hero Section -->
+    <section class="hero contact-hero" style="background-image: url('img/entrada.png'); height: 50vh;">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="page-hero-content animate-fade-in">
-                <h1>CONTACTO</h1>
+            <div class="hero-content animate-fade-in">
+                <h1>CONTÁCTANOS</h1>
                 <h2>ESTAMOS PARA AYUDARTE</h2>
-                <p>Ponte en contacto con nosotros para más información sobre nuestros proyectos</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Info Section -->
-    <section class="contact-info section-animate">
+    <section class="contact-info-section section-animate">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Información de Contacto</h2>
+                <p>ESTAMOS LISTOS PARA ATENDERTE</p>
+            </div>
+            
             <div class="contact-info-grid">
-                <div class="contact-info-text">
-                    <h2>Información de contacto</h2>
-                    <p>Estamos disponibles para atender tus consultas y brindarte toda la información que necesites sobre nuestros proyectos inmobiliarios industriales.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-detail-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-detail-content">
-                                <h3>Dirección</h3>
-                                <p>Av. B, Col. Seattle, 45150 Zapopan, Jal.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-detail-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-detail-content">
-                                <h3>Teléfono</h3>
-                                <p>+52 1 33 1148 6712</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-detail-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-detail-content">
-                                <h3>Correo electrónico</h3>
-                                <p>contacto@fterritorio.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-detail-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-detail-content">
-                                <h3>Horario de atención</h3>
-                                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-                                <p>Sábados: 9:00 AM - 1:00 PM</p>
-                            </div>
-                        </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
+                    <h3>Dirección</h3>
+                    <p>Av. B, Col. Seattle, 45150 Zapopan, Jalisco, México</p>
                 </div>
                 
-                <div class="contact-form-wrapper">
-                    <div class="contact-form-container">
-                        <form id="leadForm" class="contact-form">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Teléfono</h3>
+                    <p>+52 1 33 1148 6712</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Correo Electrónico</h3>
+                    <p>contacto@fterritorio.com</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section section-animate">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="section-header text-left">
+                        <h2 class="section-title">Envíanos un Mensaje</h2>
+                        <p>Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+                    </div>
+                    
+                    <form id="leadForm" class="contact-form">
+                        <div class="form-row">
                             <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
-                            </div>
-                            <div class="form-group">
+                                <label for="interest">¿Qué te interesa?</label>
                                 <select id="interest" name="interest" required>
-                                    <option value="" disabled selected>¿Qué te interesa?</option>
+                                    <option value="" disabled selected>Selecciona una opción</option>
                                     <option value="inversion">Inversión</option>
                                     <option value="renta">Renta</option>
                                     <option value="informacion">Más información</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn-primary">Enviar</button>
-                            </div>
-                        </form>
-                        <div id="form-success" class="form-success">
-                            <i class="fas fa-check-circle"></i>
-                            <p>¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn-primary">Enviar mensaje</button>
+                        </div>
+                    </form>
+                    
+                    <div id="form-success" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>¡Formulario enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
                     </div>
                 </div>
+                
+                <div class="contact-map">
+                    <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14932.301594682693!2d-103.4408!3d20.6596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4e98d5453d%3A0xc4fdd3929a2ecad1!2sAv.%20B%2C%20Col.%20Seattle%2C%2045150%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1651234567890!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slogan Section -->
+    <section class="slogan-section section-animate">
+        <img src="img/letrero.png" alt="Tu bodega modular, tu punto en la ciudad" class="slogan-image">
+        <div class="container">
+            <div class="slogan-content">
+                <h2>TODO CABE</h2>
+                <h3>EN EL TERRITORIO CORRECTO</h3>
+                <a href="proyectos.html" class="btn-primary">Ver proyectos</a>
             </div>
         </div>
     </section>
@@ -156,7 +184,7 @@
                 <div class="footer-logo-container">
                     <img src="img/logo.png" alt="Territorio Industrial Logo" class="footer-logo">
                 </div>
-                <p class="footer-tagline">TU BODEGA MODULAR, TU PUNTO EN LA CIUDAD</p>
+                <p class="footer-tagline">TODO CABE EN EL TERRITORIO CORRECTO</p>
                 <ul class="footer-contact">
                     <li><i class="fas fa-map-marker-alt"></i> Av. B, Col. Seattle, 45150 Zapopan, Jal.</li>
                     <li><i class="fas fa-phone"></i> +52 1 33 1148 6712</li>
@@ -190,13 +218,37 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- Toast de notificación -->
-    <div id="toast" class="toast">
-        <div class="toast-content">
-            <i class="fas fa-check-circle"></i>
-            <div class="toast-message">Mensaje enviado con éxito</div>
+    <!-- Chat Button -->
+    <button id="chat-button" class="chat-button" aria-label="Abrir chat">
+        <i class="fas fa-headset"></i>
+    </button>
+
+    <!-- Chat Container -->
+    <div id="chat-container" class="chat-container">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-headset"></i>
+                <span>Asistente Virtual</span>
+            </div>
+            <button id="close-chat" class="close-chat" aria-label="Cerrar chat">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
-        <div class="toast-progress"></div>
+        <div class="chat-body">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message assistant">
+                    <div class="message-content">
+                        ¡Hola! Soy el asistente virtual de Territorio Industrial. ¿En qué puedo ayudarte con tu consulta?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                <button id="send-message" aria-label="Enviar mensaje">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
