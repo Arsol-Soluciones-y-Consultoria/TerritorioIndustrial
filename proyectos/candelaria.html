@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proyecto Candelaria - Desarrollo industrial con ubicación estratégica y excelente conectividad. Espacios diseñados para optimizar operaciones logísticas.">
@@ -16,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Agregar reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -205,16 +201,19 @@
                     </ul>
                 </div>
                 
- <div class="specs-column">
-    <h3>Áreas</h3>
-    <ul class="specs-list">
-        <li><span class="specs-dot"></span>Nombre: La Candelaria 1</li>
-        <li><span class="specs-dot"></span>Tipo: Proyecto Nave Industrial</li>
-        <li><span class="specs-dot"></span>Superficie de terreno: 250 m²</li>
-        <li><span class="specs-dot"></span>Superficie de construcción: 200 m²</li>
-        <li><span class="specs-dot"></span>Unidades: 01 unidad</li>
-    </ul>
-</div>
+                <div class="specs-column">
+                    <h3>Áreas</h3>
+                    <ul class="specs-list">
+                        <li><span class="specs-dot"></span>Nombre: La Candelaria 1</li>
+                        <li><span class="specs-dot"></span>Tipo: Proyecto Nave Industrial</li>
+                        <li><span class="specs-dot"></span>Superficie de terreno: 250 m²</li>
+                        <li><span class="specs-dot"></span>Superficie de construcción: 200 m²</li>
+                        <li><span class="specs-dot"></span>Unidades: 01 unidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact section-animate" id="contacto">
@@ -244,6 +243,10 @@
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
+                    </div>
+                    <!-- Agregar reCAPTCHA -->
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO_RECAPTCHA"></div>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn-primary">Enviar</button>
@@ -333,13 +336,4 @@
 
     <script src="/js/script.js"></script>
 </body>
-          <!-- Chat Button -->
-<button id="chat-button" class="chat-button" aria-label="Abrir chat">
-    <i class="fas fa-headset"></i>
-</button>
-
-<!-- Chat Container -->
-<div id="chat-container" class="chat-container">
-    <!-- Contenido del chat -->
-</div>
 </html>
