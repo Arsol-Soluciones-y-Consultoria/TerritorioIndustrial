@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Actualizar año actual en el footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 
     // Menú móvil
     const mobileMenu = document.getElementById('mobile-menu');
@@ -69,6 +72,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Función para validar el reCAPTCHA
+    function validateRecaptcha() {
+        // Verificar si grecaptcha está disponible (el script se ha cargado)
+        if (typeof grecaptcha !== 'undefined' && grecaptcha.getResponse) {
+            const response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                alert("Por favor, verifica que no eres un robot");
+                return false;
+            }
+            return true;
+        }
+        // Si no hay reCAPTCHA en la página, permitir el envío
+        return true;
+    }
+
     // Formulario de contacto
     const contactForm = document.getElementById('leadForm');
     const formSuccess = document.getElementById('form-success');
@@ -78,12 +96,22 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
+            // Validar reCAPTCHA antes de procesar el formulario
+            if (!validateRecaptcha()) {
+                return;
+            }
+            
             // Aquí iría el código para enviar el formulario a un servidor
             // Por ahora, solo simulamos el envío exitoso
             
             if (formSuccess) {
                 formSuccess.classList.add('show');
                 contactForm.reset();
+                
+                // Resetear el reCAPTCHA si existe
+                if (typeof grecaptcha !== 'undefined' && grecaptcha.reset) {
+                    grecaptcha.reset();
+                }
                 
                 setTimeout(function() {
                     formSuccess.classList.remove('show');
@@ -92,6 +120,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Si no hay mensaje de éxito en el formulario, mostrar toast
                 toast.classList.add('show');
                 contactForm.reset();
+                
+                // Resetear el reCAPTCHA si existe
+                if (typeof grecaptcha !== 'undefined' && grecaptcha.reset) {
+                    grecaptcha.reset();
+                }
                 
                 setTimeout(function() {
                     toast.classList.remove('show');
