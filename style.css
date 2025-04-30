@@ -1199,7 +1199,183 @@ nav ul li a.active::after {
 .chat-button i {
   font-size: 1.5rem;
 }
+/* Slogan Section Rediseñado */
+.slogan-section {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
 
+.slogan-background {
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.slogan-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slogan-section .container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.slogan-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.slogan-text-container {
+    max-width: 600px;
+    color: white;
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.slogan-heading {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.slogan-subheading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.slogan-divider {
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.slogan-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.slogan-button {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.slogan-button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Media queries para responsividad */
+@media (max-width: 992px) {
+    .slogan-heading {
+        font-size: 2.5rem;
+    }
+    
+    .slogan-subheading {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan-background {
+        height: 450px;
+        background-attachment: scroll;
+    }
+    
+    .slogan-content {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .slogan-text-container {
+        max-width: 500px;
+    }
+    
+    .slogan-heading {
+        font-size: 2rem;
+    }
+    
+    .slogan-subheading {
+        font-size: 2.5rem;
+    }
+    
+    .slogan-divider {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .slogan-background {
+        height: 400px;
+    }
+    
+    .slogan-heading {
+        font-size: 1.8rem;
+    }
+    
+    .slogan-subheading {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .slogan-description {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    .slogan-button {
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .slogan-background {
+        height: 350px;
+    }
+    
+    .slogan-heading {
+        font-size: 1.5rem;
+    }
+    
+    .slogan-subheading {
+        font-size: 1.8rem;
+    }
+}
 /* Estilos para el contenedor del chat */
 .chat-container {
   position: fixed;
