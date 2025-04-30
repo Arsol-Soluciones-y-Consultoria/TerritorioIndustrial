@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Agregar reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -85,12 +81,12 @@
                     <p>Este proyecto ofrece bodegas modulares con excelente ubicación, alta calidad constructiva y un diseño que maximiza la eficiencia operativa y logística.</p>
                     <p>Ubicado estratégicamente en la zona de Santa Anita, con fácil acceso a vías principales y excelente conectividad, BSA II representa una inversión inteligente con alto potencial de plusvalía.</p>
                     <ul class="custom-list" style="margin-top: 20px; padding-left: 20px;">
-    <li><strong>Nombre:</strong> Bodega BSA II</li>
-    <li><strong>Tipo:</strong> Proyecto Nave Industrial</li>
-    <li><strong>Superficie total:</strong> 12,600 m²</li>
-    <li><strong>Superficie por bodega:</strong> 270 m² de construcción</li>
-    <li><strong>Unidades:</strong> 27 unidades</li>
-</ul>
+                        <li><strong>Nombre:</strong> Bodega BSA II</li>
+                        <li><strong>Tipo:</strong> Proyecto Nave Industrial</li>
+                        <li><strong>Superficie total:</strong> 12,600 m²</li>
+                        <li><strong>Superficie por bodega:</strong> 270 m² de construcción</li>
+                        <li><strong>Unidades:</strong> 27 unidades</li>
+                    </ul>
                 </div>
                 <div class="about-image">
                     <img src="img/Frentes.png" alt="Entrada BSA II" class="shadow-img">
@@ -229,6 +225,10 @@
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
+                    </div>
+                    <!-- Agregar reCAPTCHA -->
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LclCCkrAAAAADK6z4_Sy9pk8-3brwhX4gtJVcrt"></div>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn-primary">Enviar</button>
