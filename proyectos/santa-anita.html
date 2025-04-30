@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proyecto BSA I - Bodegas Santa Anita. Flex spaces y bodegas modulares en Guadalajara con excelente ubicación y alta plusvalía.">
@@ -16,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa  integrity="sha512-v+ycWQ+qJxXxzghR4hj0R82kpZXG7FAZQ3JTuEXm9y+0YQ+lZLbn+1SM2DXYxYxzfa+biJ3V+BP9IUz+NlyjOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Agregar reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -182,15 +178,15 @@
                 </div>
                 
                 <div class="specs-column">
-    <h3>Áreas</h3>
-    <ul class="specs-list">
-        <li><span class="specs-dot"></span>Nombre: Bodega Santa Anita</li>
-        <li><span class="specs-dot"></span>Tipo: Proyecto Industrial</li>
-        <li><span class="specs-dot"></span>Superficie de terreno: 1,756 m²</li>
-        <li><span class="specs-dot"></span>Superficie de construcción: 260 m² por bodega</li>
-        <li><span class="specs-dot"></span>Unidades: 5 bodegas comerciales</li>
-    </ul>
-</div>
+                    <h3>Áreas</h3>
+                    <ul class="specs-list">
+                        <li><span class="specs-dot"></span>Nombre: Bodega Santa Anita</li>
+                        <li><span class="specs-dot"></span>Tipo: Proyecto Industrial</li>
+                        <li><span class="specs-dot"></span>Superficie de terreno: 1,756 m²</li>
+                        <li><span class="specs-dot"></span>Superficie de construcción: 260 m² por bodega</li>
+                        <li><span class="specs-dot"></span>Unidades: 5 bodegas comerciales</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -253,6 +249,10 @@
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
                     </div>
+                    <!-- Agregar reCAPTCHA -->
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO_RECAPTCHA"></div>
+                    </div>
                     <div class="form-group">
                         <button type="submit" class="btn-primary">Enviar</button>
                     </div>
@@ -265,7 +265,7 @@
         </div>
     </section>
     
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-section">
@@ -301,17 +301,17 @@
         </div>
     </footer>
 
-   
+    <!-- Botón de volver arriba -->
     <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </a>
 
-
+    <!-- Chat Button -->
     <button id="chat-button" class="chat-button" aria-label="Abrir chat">
         <i class="fas fa-headset"></i>
     </button>
 
- 
+    <!-- Chat Container -->
     <div id="chat-container" class="chat-container">
         <div class="chat-header">
             <div class="chat-title">
@@ -340,58 +340,5 @@
     </div>
 
     <script src="../js/script.js"></script>
-</body>
-</html>
-
-
-    <section class="cta-section section-animate">
-        <div class="container">
-            <div class="cta-content">
-                <h2>¿Buscas un espacio industrial?</h2>
-                <p>Contáctanos para conocer la disponibilidad y opciones de inversión en nuestros proyectos.</p>
-                <a href="contacto.html" class="btn-primary">Contáctanos</a>
-            </div>
-        </div>
-    </section>
-
-   
-    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-   
-    <button id="chat-button" class="chat-button" aria-label="Abrir chat">
-        <i class="fas fa-headset"></i>
-    </button>
-
-  
-    <div id="chat-container" class="chat-container">
-        <div class="chat-header">
-            <div class="chat-title">
-                <i class="fas fa-headset"></i>
-                <span>Asistente Virtual</span>
-            </div>
-            <button id="close-chat" class="close-chat" aria-label="Cerrar chat">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="chat-body">
-            <div id="chat-messages" class="chat-messages">
-                <div class="message assistant">
-                    <div class="message-content">
-                        ¡Hola!  Soy el asistente virtual de Territorio Industrial. ¿En qué puedo ayudarte sobre nuestros proyectos?
-                    </div>
-                </div>
-            </div>
-            <div class="chat-input">
-                <input type="text" id="user-input" placeholder="Escribe tu mensaje..." />
-                <button id="send-message" aria-label="Enviar mensaje">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
