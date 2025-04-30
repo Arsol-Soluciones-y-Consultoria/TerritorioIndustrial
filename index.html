@@ -10,12 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Agregar reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -256,6 +253,10 @@
                     </div>
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Mensaje o comentario" rows="4"></textarea>
+                    </div>
+                    <!-- Agregar reCAPTCHA -->
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LclCCkrAAAAADK6z4_Sy9pk8-3brwhX4gtJVcrt"></div>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn-primary">Enviar</button>
