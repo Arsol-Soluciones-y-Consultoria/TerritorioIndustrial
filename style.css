@@ -1208,7 +1208,7 @@ nav ul li a.active::after {
 
 .slogan-background {
     position: relative;
-    height: 500px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
