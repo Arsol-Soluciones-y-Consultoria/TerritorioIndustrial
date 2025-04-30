@@ -505,7 +505,9 @@ nav ul li a.active::after {
 .project-card {
   flex: 1;
   min-width: 300px;
-  max-width: 380px;
+  max-width: 300px;
+  min-lenght: 400px;
+  max-lenght: 500px;
   background-color: var(--light-bg);
   border-radius: 0;
   overflow: hidden;
