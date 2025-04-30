@@ -1,4 +1,4 @@
- /* Base Styles & Variables */
+/* Base Styles & Variables */
 :root {
   --primary-color: #1a1a1a;
   --secondary-color: #333333;
@@ -762,16 +762,24 @@ nav ul li a.active::after {
   margin-right: 10px;
 }
 
-/* Sistema Constructivo Section */
+/* Sistema Constructivo Section - MEJORADO PARA RESPONSIVIDAD */
 .sistema-constructivo {
   background-color: var(--light-bg);
-  padding: 100px 0;
+  padding: 80px 0;
+  overflow: hidden;
 }
 
 .sistema-image {
-  max-width: 700px;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
   display: block;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.sistema-image:hover {
+  transform: scale(1.02);
 }
 
 /* Contact Section */
@@ -901,6 +909,8 @@ nav ul li a.active::after {
 .map-container {
   position: relative;
   margin-top: 40px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .map-image {
@@ -1146,6 +1156,12 @@ nav ul li a.active::after {
   animation: progress 5s linear forwards;
 }
 
+@keyframes255,255,0.7);
+  width: 100%;
+  transform-origin: left;
+  animation: progress 5s linear forwards;
+}
+
 @keyframes progress {
   0% {
     width: 100%;
@@ -1296,7 +1312,7 @@ nav ul li a.active::after {
   cursor: pointer;
 }
 
-/* Responsive styles */
+/* Responsive styles - MEJORADOS */
 @media (max-width: 992px) {
   .hero-content h1 {
     font-size: 2.8rem;
@@ -1308,6 +1324,15 @@ nav ul li a.active::after {
 
   .section-title {
     font-size: 1.8rem;
+  }
+  
+  /* Sistema constructivo responsivo */
+  .sistema-constructivo {
+    padding: 60px 0;
+  }
+  
+  .sistema-image {
+    max-width: 90%;
   }
 }
 
@@ -1339,6 +1364,19 @@ nav ul li a.active::after {
   .about-content {
     flex-direction: column;
   }
+  
+  /* Sistema constructivo responsivo */
+  .sistema-constructivo {
+    padding: 50px 0;
+  }
+  
+  .sistema-image {
+    max-width: 95%;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
 
   .footer-grid {
     flex-direction: column;
@@ -1361,19 +1399,30 @@ nav ul li a.active::after {
   .footer-social {
     justify-content: center;
   }
+  
+  /* Mapa responsivo */
+  .map-overlay {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 20px auto 0;
+  }
 }
 
 @media (max-width: 576px) {
   section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .hero-content h1 {
     font-size: 1.8rem;
+    letter-spacing: 3px;
   }
 
   .hero-content h2 {
     font-size: 1rem;
+    letter-spacing: 2px;
   }
 
   .section-title {
@@ -1382,5 +1431,67 @@ nav ul li a.active::after {
 
   .contact-form {
     padding: 30px 20px;
+  }
+  
+  /* Sistema constructivo responsivo */
+  .sistema-constructivo {
+    padding: 40px 0;
+  }
+  
+  .sistema-image {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Chat responsivo */
+  .chat-container {
+    width: 300px;
+    left: 10px;
+    bottom: 80px;
+  }
+  
+  .chat-button {
+    left: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Botón de volver arriba responsivo */
+  .back-to-top {
+    right: 20px;
+    bottom: 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Estilos específicos para dispositivos muy pequeños */
+@media (max-width: 375px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .sistema-constructivo {
+    padding: 30px 0;
+  }
+  
+  .chat-container {
+    width: 280px;
+  }
+}
+
+/* Estilos para reCAPTCHA responsivo */
+.g-recaptcha {
+  transform-origin: left top;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 320px) {
+  .g-recaptcha {
+    transform: scale(0.85);
   }
 }
